@@ -1,0 +1,103 @@
+\author{Martin Leonard Haufs}
+
+% 1.5-facher Zeilenabstand:
+\usepackage[onehalfspacing]{setspace} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+% Durchgehende Nummerierung von Abbildungen über
+% Chapter hinaus
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+
+% Kommentare mit \comment{}-Umgebung
+\usepackage{verbatim}
+
+% Anführungsstriche mit \enquote{}-Umgebung
+\usepackage[autostyle]{csquotes} 
+
+\usepackage[%
+    backend=biber,
+    style=numeric,
+    %sorting=ynt    % Sortierung nach Name des Autors
+    sorting=none    % Sortierung nach Auftreten
+]{biblatex}
+\addbibresource{data/bibliography.bib}
+
+\usepackage{fancyvrb}
+\usepackage{listings}
+
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}2
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+
+\usepackage{color}
+
+\lstdefinelanguage{JavaScript} {
+	morekeywords={
+		break,const,continue,delete,do,while,export,for,in,function,
+		if,else,import,in,instanceOf,label,let,new,return,switch,this,
+		throw,try,catch,typeof,var,void,with,yield
+	},
+	sensitive=false,
+	morecomment=[l]{//},
+	morecomment=[s]{/*}{*/},
+	morestring=[b]",
+	morestring=[d]'
+}
+
+\lstdefinelanguage{swift}
+{
+  morekeywords={
+    func,if,then,else,for,in,while,do,switch,case,default,where,break,continue,fallthrough,return,
+    typealias,struct,class,enum,protocol,var,func,let,get,set,willSet,didSet,inout,init,deinit,extension,
+    subscript,prefix,operator,infix,postfix,precedence,associativity,left,right,none,convenience,dynamic,
+    final,lazy,mutating,nonmutating,optional,override,required,static,unowned,safe,weak,internal,
+    private,public,is,as,self,unsafe,dynamicType,true,false,nil,Type,Protocol,
+  },
+  morecomment=[l]{//}, % l is for line comment
+  morecomment=[s]{/*}{*/}, % s is for start and end delimiter
+  morestring=[b]" % defines that strings are enclosed in double quotes
+}
+
+\lstset{
+	basicstyle=\footnotesize\ttfamily,
+	showstringspaces=false,
+	keywordstyle=\ttfamily\bfseries,
+	identifierstyle=\ttfamily,
+	stringstyle=\ttfamily,
+	xleftmargin=5pt,
+	xrightmargin=5pt,
+	aboveskip=\bigskipamount,
+	belowskip=\bigskipamount
+}
+
+\usepackage{minted}
+\usepackage[german]{fancyref}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{multicol}
+%\usepackage{pgf-umlsd}
+%\usepackage[pict2e]{struktex}
+\usepackage{tikz}
+%\usetikzlibrary{arrows,shadows}
+%\usepackage{csvsimple}
+%\usepackage{pgfplots}
+\usepackage{filecontents}
+%\usepackage{../daten/tikz-uml}
+
+
+% =============================
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+
+% Hyperlinks in PDF-Version des Dokumentes. Option sagt, dass keine roten Boxen erzeugt werden sollen.
+\usepackage[pdfborder={0 0 0}]{hyperref} 
+
