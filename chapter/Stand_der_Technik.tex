@@ -1,37 +1,42 @@
 \chapter{Stand der Technik}
-Zur genaueren Einordnung von Smartglasses und deren Klassifikation müssen zunächst einige Grundlegende Begriffe geklärt werden. Smartglasses werden in der Literatur verschiedenen Kategorien zugeordnet. So werden sie als Head-Mounted- Displays (HMD), des Wearable Computing als auch des Ubiquitous Computing zugeordnet \cite[S.~20]{}. HMD umfassen sowohl Virtual Reality (VR)- Brillen, als auch Augmented Reality (AR)- Brillen.
+Zur genaueren Einordnung von Smartglasses und deren Klassifikation müssen zunächst einige Grundlegende Begriffe geklärt werden. Smartglasses werden in der Literatur verschiedenen Kategorien zugeordnet. So werden sie als Head-Mounted- Displays (HMD), des Wearable Computing als auch des Ubiquitous Computing zugeordnet \cite[S.~20]{ThomasDirkMetzgerHelmutNiegemannHrsg2018}. \emph{Ubiquitous Computing} beschreibt die Allgegenwärtigkeit von Rechnern an jedem Ort, zu jeder Zeit, in jeder Situation und jedem Format. Ziel von Ubiquitous Computing ist es, Computer nicht nur mobiler zu machen, sondern zum integralen Bestandteil des Alltags zu machen \cite[S.~24]{Schwenke2016}. Grundvoraussetzung dafür ist nicht nur das \emph{Mobile Computing}, also die überall vorhandene Computerunterstützung, sondern auch das \emph{Pervasive Computing}, also die durchgehende Datenverarbeitung.
+
+HMD umfassen sowohl Virtual Reality (VR)- Brillen, als auch Augmented Reality (AR)- Brillen.
 
 \section{Einordnung von Smartglasses}
 \todo{Guter Name?}
+Der Begriff \emph{Smartglasses} (oder das deutsche Wort \emph{Datenbrillen}) ist in der Literatur nicht eindeutig definiert und Bedarf daher einer Einordnung \cite[S.~26]{Schwenke2016}.
+
 \emph{Virtual Reality (VR)} ist eine völlige Ersetzung der wahrgenommenen Realität durch eine virtuelle Realität. Dabei wird dem Nutzer das Gefühl vermittelt, \enquote{Teil einer virtuellen Realität zu sein.} \cite[S.~22]{ThomasDirkMetzgerHelmutNiegemannHrsg2018}. Virtual Reality-Brillen ermöglichen es dem Nutzer im gegensatz zu Augmented Reality- Brillen komplett in eine Virtuelle Realität abzutauchen. Realisiert wird dies durch vollständig geschlossene Gehäuse und Linsen, die vor dem Bildschirm befestigt sind. Mittels der Linsen vor dem OLED-Display wird ein scharfes Sehen in einem sehr nahen Bereich ermöglicht. Bei VR-Brillen wird zwischen Full-Feature, Mobile und Low-Budget VR-Brillen unterschieden. Full-Feature Brillen wie die Oculus Rift sind mit einer für jedes Auge separaten Full-HD-Auflösung mit hoher Bildwiederholungsrate ausgestattet und bieten dank einer leicht versetzten Anordnung einen dreidimensionalen Effekt. Der Anwender verliert durch diese Brillen das Gefühl, auf einen Bildschirm zu schauen und hat das Gefühl in einer virtuellen Realität zu sein. Die Außenwelt wird vollkommen ausgeblendet. Bewegungen mit dem Kopf werden automatisch auf die virtuelle Welt eingestellt. Nutzer bekommen das Gefühl vollkommen Teil der virtuellen Welt zu sein \cite[S.~22ff]{ThomasDirkMetzgerHelmutNiegemannHrsg2018}. Mobile- und Low-Budget-VR-Brillen wie die Samsung Gear sind Produkte, die mithilfe eines aufgesetzten Smartphones eine Virtuelle Realität erstellen.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{data/bilder/VRvsAR.pdf}
     \caption{Einordnung von Smartglasses \cite{ThomasDirkMetzgerHelmutNiegemannHrsg2018}}
-    \label{fig:mesh1}
+    \label{fig:Einordnung_Von_Smartglasses}
 \end{figure}
 Unter \emph{Mixed Reality} wird eine Vermischung von realer Umgebung und virtueller Realität verstanden. Dabei wird eine Umgebung erstellt, in der reale und virtuelle Objekte kombiniert werden können. Darunter werden also Brillen verstanden, die komplett geschlossen sind und mittels einer Kamera Inhalte aus der realen Welt in die virtuelle Realität übertragen werden können.
 
-\emph{Augmented Reality (AR)} ist im Gegensatz zu Virtual Reality das Einblenden von Informationen in das direkte Sichtfeld des Nutzers. Es wird also keine komplett virtuelle Realität erzeugt, sondern die reale Welt um digitale Inhalte ergänzt. Es gibt jedoch unterschiedliche Arten von Brillen, die Augmented Reality- Effekte erzeugen. Es wird differenziert zwischen Brillen, die \emph{echte} Augmented reality erzeugen und denen, die unterstützende Realität erzeugen. \emph{Echte} Augmented Reality wird durch Brillen wie die Microsoft Hololens erzeugt. Dabei werden kontextsensitive Informationen direkt ins Sichtfeld des Nutzers eingeblendet. Oberflächen-Erkennung ermöglicht eine Verschmelzung von realer Welt und digitalen Informationen. Die Hololens beispielsweise ist in der Lage, Dreidemensionale Hologramme im Sichtfeld des Nutzers anzuzeigen. Dies wird durch zwei transparente Displays ermöglicht.
-Davon abzugrenzen ist eine assistierte Realität, die beispielsweise durch die Google Glass, die Realwear hmt1 oder die Vuzix M100/M300 erzeugt wird. Diese Brillen werden in der Literatur oft auch als Smartglasses bezeichnet \cite[S.~26]{ThomasDirkMetzgerHelmutNiegemannHrsg2018}. Bei diesen Brillen werden mittels eines sogenannten \emph{See Through Displays}, einem Prisma auf einem Auge, virtuelle Inhalte angezeigt, ohne Verlust der Realität mit sich zu ziehen. Steuern lassen sich AR-Brillen mittels optische Impulsgeber (Pick-by-Light) oder mobiler Hilfsmittel wie Headsets (Pick-by-Voice) \cite{INTRALOGISTIK2016}. Es ist also möglich per Gesten- oder Sprachsteuerung zu navigieren.
-\todo{Mehr zu assistierte Realität}
+\emph{Augmented Reality (AR)} ist im Gegensatz zu Virtual Reality das Einblenden von Informationen in das direkte Sichtfeld des Nutzers. Das Blickfeld des Trägers wird also um virtuelle Informationen erweitert \cite[S.~26]{Schwenke2016}. Es wird also keine komplett virtuelle Realität erzeugt, sondern die reale Welt um digitale Inhalte ergänzt. Es gibt jedoch unterschiedliche Arten von Brillen, die Augmented Reality- Effekte erzeugen. Es wird differenziert zwischen Brillen, die \emph{echte} Augmented Reality erzeugen und denen, die unterstützende Realität erzeugen. \emph{Echte} Augmented Reality wird durch Brillen wie die Microsoft Hololens erzeugt. Dabei werden kontextsensitive Informationen direkt ins Sichtfeld des Nutzers eingeblendet. Oberflächen-Erkennung ermöglicht eine Verschmelzung von realer Welt und digitalen Informationen. Die Hololens beispielsweise ist in der Lage, Dreidimensionale Hologramme im Sichtfeld des Nutzers anzuzeigen. Dies wird durch zwei transparente Displays ermöglicht.
 
-\begin{comment}
-Pick-by-vision Systeme, 
-\end{comment}
+Davon abzugrenzen ist eine assistierte Realität, die beispielsweise durch die \emph{Google Glass}, die \emph{Realwear hmt1} oder die \emph{Epson Moverio BT-200} erzeugt wird. Diese Brillen werden in der Literatur oft auch als  \emph{Smartglasses} bezeichnet \cite[S.~26]{ThomasDirkMetzgerHelmutNiegemannHrsg2018}. Bei diesen Brillen werden mittels eines sogenannten \emph{Optical Head Mounted See-Through-Displays} \cite[S.~26]{Schwenke2016}, einem Prisma auf einem Auge, virtuelle Inhalte angezeigt, ohne Verlust der Realität mit sich zu ziehen. Im experimentellen Zustand befinden sich Geräte, die Informationen statt auf ein transparentes Display direkt auf die Retina des Auges projizieren \cite[S.~241]{Broll2013}. Ebenfalls zu erwähnen sind am Anfang ihrer Entwicklung befindliche Kontaktlinsen, sogenannte \emph{Smartlenses}, die Informationen mittels LEDs direkt auf die Kontaktlinse bzw. Netzhaut projizieren sollen \cite{Donath2014, Schwan2014}. Im medizinischen Bereich werden bereits heute sub-retinale Implantate getestet, die es ermöglichen, beschädigte Nerven zu ersetzen \cite{Young2013}. Dies ermöglicht ebenfalls die Einblendung von assistierten Realitäten.
+
+Steuern lassen sich AR-Brillen mittels optische Impulsgeber (Pick-by-Light) oder mobiler Hilfsmittel wie Headsets (Pick-by-Voice) \cite{INTRALOGISTIK2016}. Es ist also möglich per Gesten- oder Sprachsteuerung zu navigieren. Manche Smartglasses besitzen zudem Touch-Sensoren.
+
+Weitere Sensoren, wie Trägheitssensoren oder Standortbestimmung sind ebenfalls möglich. Die Kamera einer Smartglass kann zudem über weitere Sensoren, wie Termalsicht, verfügen \cite[S.~27]{Schwenke2016}. Oftmals sind Smartglasses mit WLAN, Mobilfunk oder Nahfeldtechnologien mit dem Internet verbunden oder über Schnittstellen mit einem externen Smartphone verknüpft, welches diese Funktionalitäten bereitstellt \cite[S.~28]{Schwenke2016}.
+\todo{Mehr zu assistierte Realität}
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - 
 %
 \section{Smartglasses im beruflichen Umfeld} \todo{Datenbrillen statt Smartglasses?}
 % 3 Seiten
-Die Logistikbranche is Deutschlands drittgrößte Branche \cite{Zobel2016}. In der Logistikbranche werden Datenbrillen in Form von Assistierten AR-Brillen (Smartglasses) eingesetzt. Smartglasses ermöglichen die Digtialisierung von Arbeitsprozessen. Sie ermöglichen die verbesserte Integration von Mitarbeitern in Unternehmensprozesse \cite{Zobel2016}. Smartglasses liefern Kontextabhängige Informationen beispielsweise via Barcodes bzw. QR-Codes. Angestellte der Logistikbranche der Transportlogistik werden in Echtzeit mit Informationen, wie beispielsweise Lieferaufträgen versorgt. Dabei müssen Arbeitsabläufe an sich nicht unterbrochen werden. In einer Use-Case-Studie \cite{Niemoller2017} wurden insgesamt 36 Einsatzmöglichkeiten für Smartglasses im Logistikdienstleistungssektor ermittelt. Die relevantesten Use-Cases werden im folgenden dargestellt:
+Die Logistikbranche ist Deutschlands drittgrößte Branche \cite{Zobel2016}. In der Logistikbranche werden Datenbrillen in Form von Assistierten AR-Brillen (Smartglasses) eingesetzt. Smartglasses ermöglichen die Digtialisierung von Arbeitsprozessen. Sie ermöglichen die verbesserte Integration von Mitarbeitern in Unternehmensprozesse \cite{Zobel2016}. Smartglasses liefern Kontextabhängige Informationen, beispielsweise via Barcodes bzw. QR-Codes. Angestellte der Logistikbranche der Transportlogistik werden in Echtzeit mit Informationen, wie beispielsweise Lieferaufträgen versorgt. Dabei müssen Arbeitsabläufe an sich nicht unterbrochen werden. In einer Use-Case-Studie \cite{Niemoller2017} wurden insgesamt 36 Einsatzmöglichkeiten für Smartglasses im Logistikdienstleistungssektor ermittelt. Die relevantesten Use-Cases werden im folgenden dargestellt:
 
 Zum einen wurde das Themenfeld Kommunikation herausgearbeitet. Mittels Smartglasses ist das Anzeigen von Handlungsanweisungen sowie die Darstellung von Videoinformationen mittels Streaming oder offline-Videos möglich. Eine vereinfachte Kommunikation durch die Übersetzung von Texten ist ebenso möglich. Im Themenfeld Qualitätssicherung ist eine automatisierte Kontrolle mittels einer kamerabasierter Fehlererkennung sowie entsprechender Rückmeldung an den Nutzer möglich. Das Haupteinsatzfeld ist jedoch die Identifizierung anhand gespeicherter Merkmale wie Farbe, Größe und Geometrie oder auch durch die Identifizierung mittels Bar- und QR-Code \cite{Niemoller2017}. Identifizierung von Objekten ermöglicht die Anzeige von Zusatzinformationen. Im Themenfeld Sicherheit ist die Kontextabhängige Darstellung von Sicherheits- und Warnhinweisen möglich. 
 
-Auf dem Fachkongress \emph{Smart Glasses Experience Days} \cite{Manokaran-Pathamathan2017} wurden weitere Einsatzfelder gezeigt. So können über die Datenbrille Montage- oder Reparaturanleitungen angezeigt werden. Es können zwecks Dokumentation Arbeitsschritte und Informationen des vorhergehenden Angestellten angezeigt werden. Per Remoteunterstützung können Angestellte Hilfe bei komplizierten Arbeitsschritten erhalten. Es können für Lagermitarbeiter Anweisungen angezeigt werden, wie und in welcher Reigenfolge Anweisungen befolgt werden sollen.
+Auf dem Fachkongress \emph{Smart Glasses Experience Days} \cite{Manokaran-Pathamathan2017} wurden weitere Einsatzfelder aufgezeigt. So können über die Datenbrille Montage- oder Reparaturanleitungen angezeigt werden. Es können zwecks Dokumentation Arbeitsschritte und Informationen des vorhergehenden Angestellten angezeigt werden. Per Remoteunterstützung können Angestellte Hilfe bei komplizierten Arbeitsschritten erhalten. Es können für Lagermitarbeiter Anweisungen angezeigt werden, wie und in welcher Reihenfolge Anweisungen befolgt werden sollen.
 
 Neben der Logistikbranche werden Smartglasses auch in anderen Branchen eingesetzt. Der Studienbericht \emph{Smart Glasses in der Produktion} des Fraunhofer-Instituts für Produktionstechnologie IPT von 2016 \cite{Plutz} wurde der Einsatz von Smartglasses im beruflichen Umfeld der industriellen Produktion analysiert. So setzen 3,4\% der 237 befragten Unternehmen Unternehmen Smartglasses bereits ein. 15,1\% wollen diese in nächster Zeit einsetzen. Die häufigsten Anwendungsgebiete waren Mitarbeiterschulungen (27,3\%), Fernwartung/Videotelefonie (27,1\%), Echtzeitanzeige von Informationen (22,8\%) und industrielle Bildverarbeitung (17,5\%). Laut dem Bericht ist es möglich, nicht nur 
-prozessrelevante Informationen zur Verfügung zu stellen, sondern Angestellte auch dazu zu befähigen, Informationen prozessintegriert zu erzeugen. Es sei zudem möglich, hochaufgelöste Zeiterfassung manueller Tätigkeiten zu realisieren und Prüfdaten nicht wie bislang handschriftlich digital zu erfassen, sondern dabei die Hände frei zu haben.
+prozessrelevante Informationen zur Verfügung zu stellen, sondern Angestellte auch dazu zu befähigen, Informationen prozessintegriert zu erzeugen. Es sei zudem möglich, hoch aufgelöste Zeiterfassung manueller Tätigkeiten zu realisieren und Prüfdaten nicht wie bislang handschriftlich digital zu erfassen, sondern dabei die Hände frei zu haben.
 
 Laut einer Pressemitteilung des Logistikunternehmens DHL vom 2. August 2017 führt der Einsatz von Smartglasses zu einer 15-prozentigen Produktivitätssteigerung bei geringerer Fehlerquote in ihrer \cite{DeutschePostDHLGroup2017}. Mittels Sprachsteuerung lassen sich einzelne Kommissionieraufträge aufrufen und die nötigen Informationen auf dem Display anzeigen. So lassen sich Lagerort, Lagerplatz und die zu packende Anzahl der Ware anzeigen statt wie bisher auf papierbasierte Auftragsanweisungen zurückgreifen. Es kann freihändig gearbeitet werden.
 
@@ -41,4 +46,58 @@ Bosch setzt in seiner Logistiksparte ebenfalls Smartglasses ein. Für Bosch ist 
 %
 \section{Vergleich verschiedener Smartglasses}
 % 2 Seiten
-\todo{...}
+Da in dieser Arbeit Augmented Reality-Brillen und insbesondere Smartglasses, also Brillen mit assistierter Realität, behandelt werden, werden im Folgenden einige Brillen dieses Bereiches vorgestellt.
+%
+\subsection*{Google Glass}
+%
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{data/bilder/Google_Glass_Model_zugeschnitten.png}
+    \caption{Google Glass auf dem Kopf eines Models \cite{Reckmann2014}}
+    \label{fig:GlassModel}
+\end{figure}
+%
+Der 2012 eingeführte Prototyp einer ersten Version von Google Glass hat ein über dem rechten Auge plaziertes durchsichtiges quaderförmiges Display. Neben dem Display befindet sich eine hochauflösende Kamera sowie ein Mikrofon. Im Bügel der Brille ist die Recheneinheit angeordnet. Die Batterieleistung der Brille betrug beim ersten Prototypen nur wenige Stunden, ist in neueren Versionen jedoch deutlich erhöht. Die Brille ist mit WLAN ausgestattet und ermöglicht mittels einer Verknüpfung mit einem Android-Smartphone die Verbindung ins Mobilfunknetz sowie die Standortbestimmung mittels GPS.
+
+Die Brille lässt sich über verschiedene Sensoren steuern. So besitzt sie ein Touchpad im Bügel der Brille. Sprachbefehle ermöglichen ebenfalls die Steuerung der Brille. Augenbewegungen des Nutzers werden durch einen Infrarotsensor erfasst. Die Kameraaktivität wird nicht angezeigt \cite[S.~30]{Schwenke2016}. Die Glass ist mit einem Android-Betriebssystem ausgestattet. Es gibt eine ausführliche Dokumentation mit speziellen APIs zur Entwicklung spezieller Glass-Anwendungen.
+
+Mittlerweile hat Google eine speziell für den professionellen Einsatz optimierte Brille eröffentlicht, die \emph{Glass Enterprise Edition} \cite{Inc.2018}. Diese Brille ist nur für den professionellen Einsatz zugelassen und wird nicht an Privatpersonen verkauft.
+%
+\subsection*{Epson Moverio BT-200}
+%
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{data/bilder/Moverio_BT-200.png}
+    \caption{Epson Moverio BT-200 \cite{Epson}}
+    \label{fig:BT-200}
+\end{figure}
+%
+Die Smartglass \emph{Moverio BT-200} von Epson hat im Gegensatz zur Google Glass zwei Bildschirme (je ein Bildschirm vor jedem Auge). Der Prozessor sowie die Batterie sind extern mittels eines Kabels mit der Brille verbunden. Die Brille verfügt über ein Touchpad, welches ähnlich dem der Google Glass am Bügel der Brille befestigt ist. Die Kamera der Brille ist deutlich geringer aufgelöst (640x480 Pixel), zeigt die Benutzung jedoch im Gegensatz zur Google Glass über eine kleine Leuchtdiode an. Wie auch die Google Glass ist das Betriebssystem der Moverio BT-200 Android \cite[S.~32]{Schwenke2016}. Diese Smartglass ist momentan nur in einer Developer-Edition erhältlich \cite{Epson}.
+%
+\subsection*{Vuzix M300}
+%
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{data/bilder/m300-top.png}
+    \caption{Vuzix M300 \cite{Vuzix2018}}
+    \label{fig:hmt1}
+\end{figure}
+%
+Die \emph{Vuzix M300} ist speziell für den professionellen Einsatz konzipiert. Sie verfügt über ein nicht-Transparentes Display am rechten Auge, hat eine HD-Kamera und großen internen Speicher. Sie ist spritzwassergeschützt und nach Herstellerangaben robust gestaltet. Die Brille verfügt über ein Touch Pad sowie zwei Mikrofone zur Sprachsteuerung. 
+
+Das Betriebssystem der Brille ist Android. Es lassen sich alle für Android 6 konzipierten Apps auf der Brille bedienen, jedoch auch speziell für die Brille entwickelte Apps. Die Brille kann mit iOS- und Android-Smartphones gekoppelt werden, um Zugriff auf GPS und Mobilfunk zu erhalten. Zur Entwicklung für die App steht Entwicklern eine weitreichende Dokumentation sowie spezielle APIs zur verfügung.
+
+\cite{Vuzix2018}
+%
+\subsection*{Realwear hmt-1}
+%
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.4\textwidth]{data/bilder/hmt1_web.png}
+    \caption{Realwear hmt-1 mit Schutzhelm \cite{Realwear2018}}
+    \label{fig:hmt1}
+\end{figure}
+%
+Die \emph{Realwear hmt-1} ist für den professionellen Einsatz optimiert. Ähnlich der Google Glass ist ein Display am rechten Auge befestigt. Im Gegensatz zur Glass ist dieses Display jedoch nicht transparent, es ist jedoch für den Außeneinsatz konzipiert und ist auch bei starkem Sonnenlicht nutzbar. 
+
+Prozessor und Batterie sind im Bügel der Brille befestigt. Die Brille lässt sich vollkommen ohne Hände bedienen und besitzt eine Sprachsteuerung mit integrierter Noice-Cancellation mittels vier eingebauter Mikrofone. Die Batterie der Brille hält einen gesamten Arbeitstag. Im Gegensatz zur Glass und BT-200 ist die hmt-1 sturzbeständig auf 2~m. Wie auch Glass und BT-200 ist das Betriebssystem der hmt-1 Android. Es gibt eine gut dokumentierte Entwicklerdokumentation und spezielle APIs zur Entwicklung von speziell für die Brille konzipierten Android-Anwendungen \cite{Realwear2018}.
