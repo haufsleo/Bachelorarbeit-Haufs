@@ -17,7 +17,6 @@ Durch die Kamera der Smartglass, die auch alle in Kapitel \ref{sec:VergleichSmar
 Per Barcodes und QR-Codes können direkte Befehle an die Brille gegeben werden. So ist es möglich Methoden der App auf der Brille aufzurufen oder Hyperlinks auszuwählen. Es wäre beispielsweise denkbar einen QR-Code zu verwenden, um Videos zu einem Bauteil anzuzeigen. Ein Barcode kann als Beschriftung eines Siebes oder Sterilgutes verwendet werden und damit Automatisch getracked werden. Barcodes können lediglich Zahlen speichern und sind in ihrer Anzahl an Ziffern stark begrenzt. QR-Codes sind zweidimensionale (Matrix-) Barcodes  und können bis zu 4.296 Alphanumerische Zeichen speichern \cite{INCORPORATED2018}. So können auch komplexe Informationen \emph{mit einem Blick} erfasst werden.
 
 Die im folgenden Unterkapitel (\ref{sec:Objekterkennung}) näher beschriebene Objekterkennung ermöglicht ebenfalls starke Eingabemöglichkeiten.
-
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - 
 %
@@ -25,26 +24,55 @@ Die im folgenden Unterkapitel (\ref{sec:Objekterkennung}) näher beschriebene Ob
 \label{sec:Objekterkennung}
 % 2 Seiten 
 Objekterkennung ist in den letzten Jahren massiv weiterentwickelt worden. Firmen wie Apple \cite{Apple2018b}, Microsoft \cite{Girshick2015} oder Facebook \cite{Schroepfer2015} haben große Fortschritte in der Technologie der Objekterkennung gemacht. Diese großen Meilensteine konnten erreicht werden durch die großen Fortschritte in der Künstlichen Intelligenz mit neuronalen Netzwerken \cite{Apple2018b, Schroepfer2015}. Zur modernen Objekterkennung mittels Machine Learning- Algorithmen ist es heute möglich in sehr kurzer Zeit Objekte selbst in komplizierten Umgebungen zu erkennen \cite{Schroepfer2015}. \todo{..?}
+Objekterkennung ist heute dank Neuronalen Netzen auch (momentan nur auf iOS-Geräten) \emph{on Device} möglich (vgl. \cite{Apple2018b}), sodass davon ausgegangen werden kann, dass bald auch auf Android- Smartglasses auch ohne Internetverbindung Objekterkennung möglich ist.
 
-
+Mittels Objekterkennung in Smartglasses eröffnen sich völlig neue Möglichkeiten der Interaktion für Nutzer. So könnten in der Sterilgutversorgung spezifische chirurgische Instrumente oder ganze Siebe mit Instrumenten erkannt werden. Es wäre möglich direkte Handlungsanweisungen für Mitarbeiter der Medizinprodukteaufbereitung im Blickfeld anzuzeigen oder Austauschmöglichkeiten mit Mitarbeitern über konkret erkannte Instrumente zu führen. Es wäre ebenfalls per Objekterkennung möglich, die Dokumentation von Arbeitsschritten mittels erkannter Objekte zu führen, ohne einen Barcode- oder QR-Code einzulesen.
+\todo{...}
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - 
 %
 \subsection{Externe Peripherie}
 \label{sec:Externe_Peripherie}
 % 1 Seite 
+Smartglasses der aktuellen in Kapitel \ref{sec:VergleichSmartglasses} vorgestellten Modelle sind allesamt Android- Geräte. Bei Androidgeräten ist es ohne Probleme möglich, externe Peripheriegeräte zu verwenden. Diese können per USB, oder per WLAN oder Bluetooth angebunden werden. 
+
+Peripheriegeräte einer Smartglass sollten nach Möglichkeit drahtlos, also mittels WLAN oder Bluetooth mit der Brille verbunden sein, da Kabel an der Brille sehr störend sein könnten. 
+
+Es gibt viele denkbare Peripheriegeräte, von denen hier nur einige wenige vorgestellt werden können.
+
+Mittels eines externen Barcode- oder QR-Scanners könnten entsprechende Codes auch dann eingelesen werden, wenn der Angestellte die Codes nicht direkt anschaut. Es kann möglicherweise unpraktisch sein, immer direkt die betreffenden Codes anschauen zu müssen. 
+
+Mittels externer (steriler) Bedienelemente könnte die Benutzerführung der Brille verbessert werden. So könnte die oft nicht sterile Touchbar der Brille (vgl. Google Glass) ersetzt werden und so auch eine solche Brillen mit dieser guten Funktionalität ausgestattet werden, die keine Touchbar haben. 
+
+Ein externer Monitor könnte das Sichtfeld des Brillendisplays ergänzen, sodass zum einen andere Mitarbeiter (z.B. bei Schulungen, Präsentationen etc.) die gleichen Bilder der AR-Brille sehen, die der Anwender sieht. Wenn ein Transparenter Monitor eingesetzt wird, kann der AR-Effekt sogar noch verstärkt werden, da so noch weitere AR-Elemente eingeblendet werden könnten, die in dem relativ kleinen Bildschirm der Brille nicht möglich sind.
+
+Abschließend sei der Einsatz von Codes genannt, die die Position für Virtuelle Elemente im Raum darstellen. So könnten an definierten Stellen im Raum virtuelle Elemente im Bildschirm der Brille eingeblendet werden. So könnten virtuelle \enquote{Hologramme} im Raum angezeigt werden, die an einer wohl definierten Stelle im Raum platziert werden (bspw. an einer Wand oder in einem Sieb mit chirurgischen Instrumenten).
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - 
 %
 \subsection{Medienverwaltung}
 \label{sec:Medienverwaltung}
-% 2 Seiten 
+% 2 Seiten (???)
+Werden Videos oder Bilder auf einer Smartglass erzeugt, können diese entweder (lokal) auf der Brille bzw. deren SD-Karte gespeichert werden oder (extern) auf einem Server (\emph{Cloud}) gespeichert werden. Werden die Bilder lokal gespeichert, so benötigt die betreffende Anwendung eine entsprechende Datenbankverwaltung der Bilder bzw. Videos. Bilder können im Normalfall in der Originalgröße der Kamera gespeichert werden, Videos müssen dagegen evtl. komprimiert werden, da sie ansonsten zu groß sind um auf einen Server geladen zu werden. 
+
+Steuerung der Eingabe lässt sich auf unterschiedliche Weise regeln. So ist es möglich, Links zu Videos oder Bildern in einer Datenbank zu speichern und per Barcode oder QR-Code darauf zuzugreifen (den Identifikationsschlüssel des entsprechenden Videos in der Datenbank zu verlinken). Es könnte auch der Link zu einem extern gespeicherten Medium in einem QR Code gespeichert werden und direkt verlinkt zu werden. 
+
+Kurze Texte wie Beschriftungen können direkt in einem QR-Code (evtl. verschlüsselt) gespeichert werden, So spart sich der Anwender die Verbindung zu einem Server und die dort hinterlegte Datenbank, in der der Text gespeichert wäre.
+\todo{...}
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - 
 %
 \section{Medienpräsentation}
 \label{sec:Medienpraesentation}
 % 2 Seiten
+Die Art und Weise, wie Daten auf einem in der Smartglass vergleichsweise kleinen Bildschirm dargestellt werden ist eine große Herausforderung für die Entwicklung von Smartglass-Apps. Medien müssen übersichtlich und gleichzeitig präsent angeordnet werden. Beschriftungen, die die Sprachbefehle erklären, müssen übersichtlich, aber auch nicht zu präsent angeordnet werden. Die Smartglass- Anwendung muss, wie jede gute Smartphone App auch, selbsterklärend zu benutzen sein, damit die in Kapitel \ref{sec:Spezifische_Anforderungen_an_Smartglasses} beschriebene gute Nutzererfahrung gewährleistet ist. 
+Muss ein technikaffiner Nutzer erst in einem längeren Seminar o.Ä. die Nutzung der App \emph{lernen}, da sie sonst nicht zu verstehen ist, so ist das Design der App ungenügend \cite{Hoober2011} \cite[S.~141ff]{Norman2013}.
+
+Mobile Geräte, wie auch Smartglasses, bieten nur wenig Platz, um Informationen oder Entscheidungen zu präsentieren. Designer von Oberflächen haben nicht die Möglichkeit über großen Platz für Bilder, Listen etc. zu verfügen. Das Design muss dabei auf das Wesentliche reduziert werden. Die erste Seite der App sollte dabei die meisten Informationen enthalten \cite[S.~442]{Tidwell2005}. Da es kaum Literatur zum Design von Smartglass-Apps gibt, kann dank der ähnlichen kompakten Bauweise der Apps hier die Designrichtlinie für Smartwatches als Anhaltspunkt dienen. Für watchOS hat Apple entsprechende Human Interface Guidelines veröffentlicht \todo{? Ok so ?} \cite{Apple2018c}. Google hat für seine Smartwatches einen Ähnlichen Human Interface Guilde veröffentlicht \cite{Google2018}. Aus diesen beiden Guidelines geht folgendes hervor:
+
+Mobile Geräte mit geringem Bildschirm müssen Informationen schnell und einfach anzeigen können. Dabei muss darauf geachtet werden, dass die Inhalte in kompakter Form und sehr auf das wichtigste reduziert dargestellt werden. Die Oberfläche der Anwendung muss übersichtlich gehalten werden. Dabei müssen Texte und Bilder so angeordnet werden, dass Nutzer die Informationen, die sie benötigen, schnell finden. Es muss darauf geachtet werden, dass Schriftgrößen bei dieser reduzierten Größe gut lesbar sind. Es muss vermieden werden, zu viele Informationen gleichzeitig auf dem Bildschirm anzuzeigen. Benutzer wollen die wichtigsten Informationen sofort sehen, damit Sie den Bildschirm nicht mit unwichtigen Details überladen. 
+Es ist wichtig, visuelle Gruppierungen zu erstellen, um den Benutzern das Auffinden der Informationen zu erleichtern. Es ist ebenso erforderlich, die volle Breite des Bildschirms zu nutzen \cite{Apple2018c, Google2018}.
+\todo{...}
 %
 % - - - - - - - - - - - - - - - - - - - - - - - - 
 %
