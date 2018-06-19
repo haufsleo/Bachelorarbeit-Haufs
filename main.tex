@@ -2,7 +2,7 @@
 % - - - Allgemeine Parameter - - - 
 %
 % - - - Abgabedatum der Arbeit - - - 
-\newcommand{\dateOfSubmission}{1. August 2018 \todo{!!!}}
+\newcommand{\dateOfSubmission}{1. August 2018 \todo[color=red]{Abgabedatum anpassen}}
 % - - - Autor - - - 
 \newcommand{\authorOfWork}{Martin Leonard Haufs}
 % - - - Matrikelnummer - - -
@@ -12,8 +12,8 @@
 % - - - Dokumententyp - - -
 \newcommand{\documentTypeName}{Bachelorarbeit}
 % - - - Titel der Arbeit
-\newcommand{\documentTitle}{Multimediale Unterstützung in der Medizinprodukteaufbereitung mittels Smartglasses}
-% - - - Erstprüfer - - -  
+\newcommand{\documentTitle}{Multimediale Unterst\"utzung in der Medizinprodukteaufbereitung mittels Smartglasses}
+% - - - Erstprüfer - - -
 \newcommand{\erstpruefer}{Prof. Dr. Volker Sander}
 % - - - Zweitprüfer - - - 
 \newcommand{\zweitpruefer}{Dr. Mirco Vitr}
@@ -26,6 +26,12 @@
 % - - - - - - - - - - - - - - - - - -
 %
 \begin{document}
+%
+% List of Todos (for developing only)
+    \listoftodos
+    \setcounter{page}{1} 
+    \pagenumbering{roman}
+% - - - - - - - - - - - - - - - - - -
 %
 % - - - Titelseite - - - 
 \include{data/titlepage}
@@ -56,7 +62,7 @@
 %
 \include{chapter/Prototyp}
 %
-\include{chapter/Evaluation_des_Prototyps}
+\include{chapter/Evaluation}
 %
 \include{chapter/Fazit}
 %

@@ -1,10 +1,23 @@
+%
+%
+%
+% - - - - - Konzept - - - - - - - - 
+%
+%
+%
 \chapter{Konzept}
+\label{ch:Konzept}
 % 0,5 Seiten
 Im Folgenden soll ein Konzept vorgestellt werden, wie Smartglasses in der Sterilgutversorgung eingesetzt werden können. Dazu werden zunächst die Interaktionsmöglichkeiten erläutert, dann die Möglichkeiten der Objekterkennung dargelegt und dies mit möglichen Peripheriegeräten konkretisiert. Eine Beschreibung der Medienverwaltung, -präsentation sowie -erfassung und -erstellung werden abschließend beschrieben.
 %
-% - - - - - - - - - - - - - - - - - - - - - - - - 
+%
+%
+% - - - - - Interaktionsmöglichkeiten - - - - - - - - 
+%
+%
 %
 \section{Interaktionsmöglichkeiten}
+\label{sec:Interaktionsmoeglichkeiten}
 % 2 Seiten
 Wie in Kapitel \ref{sec:Stand_der_Technik} bereits beschrieben gibt es bei Smartglasses verschiedene Arten der Interaktion, und damit der Eingabe an der Brille. Je nach Hardware und aufgespielter Software (App) sind verschiedene Interaktionsmöglichkeiten denkbar. 
 
@@ -18,18 +31,26 @@ Per Barcodes und QR-Codes können direkte Befehle an die Brille gegeben werden. 
 
 Die im folgenden Unterkapitel (\ref{sec:Objekterkennung}) näher beschriebene Objekterkennung ermöglicht ebenfalls starke Eingabemöglichkeiten.
 %
-% - - - - - - - - - - - - - - - - - - - - - - - - 
+%
+%
+% - - - - - Objekterkennung - - - - - - - - 
+%
+%
 %
 \section{Objekterkennung}
 \label{sec:Objekterkennung}
 % 2 Seiten 
-Objekterkennung ist in den letzten Jahren massiv weiterentwickelt worden. Firmen wie Apple \cite{Apple2018b}, Microsoft \cite{Girshick2015} oder Facebook \cite{Schroepfer2015} haben große Fortschritte in der Technologie der Objekterkennung gemacht. Diese großen Meilensteine konnten erreicht werden durch die großen Fortschritte in der Künstlichen Intelligenz mit neuronalen Netzwerken \cite{Apple2018b, Schroepfer2015}. Zur modernen Objekterkennung mittels Machine Learning- Algorithmen ist es heute möglich in sehr kurzer Zeit Objekte selbst in komplizierten Umgebungen zu erkennen \cite{Schroepfer2015}. \todo{..?}
-Objekterkennung ist heute dank Neuronalen Netzen auch (momentan nur auf iOS-Geräten) \emph{on Device} möglich (vgl. \cite{Apple2018b}), sodass davon ausgegangen werden kann, dass bald auch auf Android- Smartglasses auch ohne Internetverbindung Objekterkennung möglich ist.
+Objekterkennung ist in den letzten Jahren massiv weiterentwickelt worden. Firmen wie Apple \cite{Apple2018b}, Microsoft \cite{Girshick2015} oder Facebook \cite{Schroepfer2015} haben große Fortschritte in der Technologie der Objekterkennung gemacht. Diese großen Meilensteine konnten erreicht werden durch die großen Fortschritte in der Künstlichen Intelligenz mit neuronalen Netzwerken \cite{Apple2018b, Schroepfer2015}. Zur modernen Objekterkennung mittels \emph{Machine Learning}- Algorithmen ist es heute möglich in sehr kurzer Zeit Objekte selbst in komplizierten Umgebungen zu erkennen \cite{Schroepfer2015}. \todo{Ok so?}
+Objekterkennung ist heute dank Neuronalen Netzen auch (momentan nur auf iOS-Geräten) \emph{on Device} möglich (vgl. \cite{Apple2018b}), sodass davon ausgegangen werden kann, dass bald auch auf Android- Smartglasses auch ohne Internetverbindung Objekterkennung möglich ist. Auf Android ist für Objekterkennung momentan eine Internetverbindung nötig, da nicht \emph{on Device}, sondern \emph{cloudbasiert} gearbeitet wird.
 
 Mittels Objekterkennung in Smartglasses eröffnen sich völlig neue Möglichkeiten der Interaktion für Nutzer. So könnten in der Sterilgutversorgung spezifische chirurgische Instrumente oder ganze Siebe mit Instrumenten erkannt werden. Es wäre möglich direkte Handlungsanweisungen für Mitarbeiter der Medizinprodukteaufbereitung im Blickfeld anzuzeigen oder Austauschmöglichkeiten mit Mitarbeitern über konkret erkannte Instrumente zu führen. Es wäre ebenfalls per Objekterkennung möglich, die Dokumentation von Arbeitsschritten mittels erkannter Objekte zu führen, ohne einen Barcode- oder QR-Code einzulesen.
-\todo{...}
+\todo[color=green]{Objekterkennung...}
 %
-% - - - - - - - - - - - - - - - - - - - - - - - - 
+%
+%
+% - - - - - Externe Peripherie - - - - - - - 
+%
+%
 %
 \subsection{Externe Peripherie}
 \label{sec:Externe_Peripherie}
@@ -48,7 +69,11 @@ Ein externer Monitor könnte das Sichtfeld des Brillendisplays ergänzen, sodass
 
 Abschließend sei der Einsatz von Codes genannt, die die Position für Virtuelle Elemente im Raum darstellen. So könnten an definierten Stellen im Raum virtuelle Elemente im Bildschirm der Brille eingeblendet werden. So könnten virtuelle \enquote{Hologramme} im Raum angezeigt werden, die an einer wohl definierten Stelle im Raum platziert werden (bspw. an einer Wand oder in einem Sieb mit chirurgischen Instrumenten).
 %
-% - - - - - - - - - - - - - - - - - - - - - - - - 
+%
+%
+% - - - - - Medienverwaltung - - - - - - - - 
+%
+%
 %
 \subsection{Medienverwaltung}
 \label{sec:Medienverwaltung}
@@ -58,9 +83,13 @@ Werden Videos oder Bilder auf einer Smartglass erzeugt, können diese entweder (
 Steuerung der Eingabe lässt sich auf unterschiedliche Weise regeln. So ist es möglich, Links zu Videos oder Bildern in einer Datenbank zu speichern und per Barcode oder QR-Code darauf zuzugreifen (den Identifikationsschlüssel des entsprechenden Videos in der Datenbank zu verlinken). Es könnte auch der Link zu einem extern gespeicherten Medium in einem QR Code gespeichert werden und direkt verlinkt zu werden. 
 
 Kurze Texte wie Beschriftungen können direkt in einem QR-Code (evtl. verschlüsselt) gespeichert werden, So spart sich der Anwender die Verbindung zu einem Server und die dort hinterlegte Datenbank, in der der Text gespeichert wäre.
-\todo{...}
+\todo[color=green]{Medienverwaltung...}
 %
-% - - - - - - - - - - - - - - - - - - - - - - - - 
+%
+%
+% - - - - - - Medienpräsentation - - - - - - - - 
+%
+%
 %
 \section{Medienpräsentation}
 \label{sec:Medienpraesentation}
@@ -69,20 +98,25 @@ Die Art und Weise, wie Daten auf einem in der Smartglass vergleichsweise kleinen
 Muss ein technikaffiner Nutzer erst in einem längeren Seminar o.Ä. die Nutzung der App \emph{lernen}, da sie sonst nicht zu verstehen ist, so ist das Design der App ungenügend \cite{Hoober2011} \cite[S.~141ff]{Norman2013}.
 
 Mobile Geräte, wie auch Smartglasses, bieten nur wenig Platz, um Informationen oder Entscheidungen zu präsentieren. Designer von Oberflächen haben nicht die Möglichkeit über großen Platz für Bilder, Listen etc. zu verfügen. Das Design muss dabei auf das Wesentliche reduziert werden. Die erste Seite der App sollte dabei die meisten Informationen enthalten \cite[S.~442]{Tidwell2005}. Da es keine Designrichtlinien der Hersteller für Smartglass-Apps gibt, kann dank der ähnlichen kompakten Bauweise der Apps hier die Designrichtlinie für Smartwatches als Anhaltspunkt dienen. Diese muss natürlich für Smartglasses angepasst werden.
-\todo{?}
-Für \emph{watchOS} hat Apple entsprechende Human Interface Guidelines veröffentlicht 
-\todo{?} 
+\todo{Geht das so?}
+Für \emph{watchOS} hat Apple entsprechende \emph{Human Interface Guidelines} veröffentlicht 
+\todo{Geht das so?} 
 \cite{Apple2018c}. Google hat für seine Smartwatches mit \emph{Android Wear} eine ähnliche Veröffentlichung getätigt \cite{Google2018}. Aus diesen beiden Richtlinienkatalogen geht u.a. folgendes hervor:
 
 Mobile Geräte mit geringem Bildschirm müssen Informationen schnell und einfach anzeigen können. Dabei muss darauf geachtet werden, dass die Inhalte in kompakter Form und sehr auf das wichtigste reduziert dargestellt werden. Die Oberfläche der Anwendung muss übersichtlich gehalten werden. Dabei müssen Texte und Bilder so angeordnet werden, dass Nutzer die Informationen, die sie benötigen, schnell finden. Es muss darauf geachtet werden, dass Schriftgrößen bei dieser reduzierten Größe gut lesbar sind. Es muss vermieden werden, zu viele Informationen gleichzeitig auf dem Bildschirm anzuzeigen. Benutzer wollen die wichtigsten Informationen sofort sehen, damit Sie den Bildschirm nicht mit unwichtigen Details überladen. 
 Es ist wichtig, visuelle Gruppierungen zu erstellen, um den Benutzern das Auffinden der Informationen zu erleichtern. Es ist ebenso erforderlich, die volle Breite des Bildschirms zu nutzen \cite{Apple2018c, Google2018}.
-\todo{...}
+\todo[color=green]{Medienpräsentation...}
 %
-% - - - - - - - - - - - - - - - - - - - - - - - - 
+%
+%
+% - - - - - Medienerfassung/-erstellung - - - - - - - - 
+%
+%
 %
 \section{Medienerfassung/-erstellung}
 \label{sec:Medienerfassung_-erstellung}
 % 2 Seiten
 Medien in einer Smartglass können auf unterschiedlichste Weise erfasst werden. Es können zum einen Videos und Bilder aufgenommen werden. Sprachaufnahmen sind ebenfalls möglich, genau wie in Text transkribierte Sprache. 
 
-Medien, die auf einer Smartglass erzeugt werden müssen ggf. komprimiert werden oder anders weiterverarbeitet werden, bevor sie verwendet werden können. So müssen Video- und Audioaufnahmen möglicherweise digital aufbereitet werden, da in der Sterilgutversorgung eine sehr starke Geräuschkulisse herrscht. Monotone Hintergrundgeräusche lassen sich heute sehr gut herausfiltern.\todo{...}
+Medien, die auf einer Smartglass erzeugt werden müssen ggf. komprimiert werden oder anders weiterverarbeitet werden, bevor sie verwendet werden können. So müssen Video- und Audioaufnahmen möglicherweise digital aufbereitet werden, da in der Sterilgutversorgung eine sehr starke Geräuschkulisse herrscht. Monotone Hintergrundgeräusche lassen sich heute sehr gut herausfiltern.
+\todo[color=green]{Medienerfassung/-erstellung...}
