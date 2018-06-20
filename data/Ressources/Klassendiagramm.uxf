@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>250</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Video
+--
+- file: File
+- title: String
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>110</y>
+      <w>170</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+Slide
+--
+- image: Image
+- title: String
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>110</y>
+      <w>170</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+SlideList
+--
+- slides: Array&lt;Slide&gt;
+- name: String
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>250</y>
+      <w>170</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Class&gt;&gt;
+VideoList
+--
+- videos: Array&lt;Video&gt;
+- name: String
+--
+
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>160</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..*
+m1=0..1</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>290</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2=0..*
+m1=0..1</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

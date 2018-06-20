@@ -56,5 +56,16 @@ Wählt ein Nutzer den \enquote{Aufnahmen auswählen}- Button, so wird ein Fenste
 
 Einlesen des QR-Codes sowie die Aufnahme des Videos werden mithilfe der API der \emph{hmt-1} realisiert und das jeweilige Ergebnis an die aufrufende View übergeben.
 
-\insertMore{Implementation}
-% 3 Seiten
+\subsection{Datemodell}
+In Abbildung \ref{fig:Klassendiagramm_Model} ist das Klassendiagramm des Models gezeigt. Es besteht aus insgesamt 4 Klassen. Den Basisdatentypen \enquote{Slide} und \enquote{Video}. Slide kapselt ein Bild \enquote{image} und einen Titel \enquote{title}. Slide kapselt eine Datei \endquote{file} und den Titel \enquote{title}. Zwei weitere Klassen \enquote{SlideList} und \enquote{VideoList} bestehen jeweils aus einer \emph{ArrayList} des jeweiligen Typen und einem \emph{String} namens \enquote{name}.
+
+\insertMore{Datenmodell}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{data/bilder/Klassendiagramm.pdf}
+    \caption{Klassendiagramm des Model-Packages}
+    \label{fig:Klassendiagramm_Model}
+\end{figure}
+
+
