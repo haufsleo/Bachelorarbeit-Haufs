@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>126</x>
+      <y>182</y>
+      <w>343</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>126</x>
+      <y>175</y>
+      <w>343</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lw=5
+
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>126</x>
+      <y>161</y>
+      <w>343</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Hauptmenü
+valign=top
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>140</x>
+      <y>203</y>
+      <w>308</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Slideshow
+bg=gray
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>140</x>
+      <y>357</y>
+      <w>308</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Video Aufzeichnen
+bg=gray
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>140</x>
+      <y>280</y>
+      <w>308</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Videos
+bg=gray
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>602</x>
+      <y>175</y>
+      <w>343</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lw=5
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>602</x>
+      <y>161</y>
+      <w>343</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slides
+valign=top</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>210</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slides #A
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>238</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slides #B
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>1085</x>
+      <y>182</y>
+      <w>343</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>266</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slides #B
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>294</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slides #B
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>322</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slides #B
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>350</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slides #B
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>868</x>
+      <y>392</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Weiter
+
+bg=gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>406</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>1085</x>
+      <y>161</y>
+      <w>343</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Slide
+valign=top
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>1085</x>
+      <y>182</y>
+      <w>343</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1351</x>
+      <y>392</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Weiter
+
+bg=gray
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1365</x>
+      <y>406</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+group=13</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1379</x>
+      <y>399</y>
+      <w>98</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=[^]-[&gt;]
+group=13</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;90.0;120.0;90.0;120.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>1085</x>
+      <y>175</y>
+      <w>343</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lw=5
+
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1106</x>
+      <y>406</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+group=13</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>1092</x>
+      <y>392</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Zurück
+
+bg=gray
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1092</x>
+      <y>189</y>
+      <w>329</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>
+
+
+
+Bild
+
+bg=gray
+layer=3
+fontsize=24
+group=13</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1043</x>
+      <y>399</y>
+      <w>98</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=[^]-[&lt;]
+group=13</panel_attributes>
+    <additional_attributes>120.0;60.0;120.0;90.0;10.0;90.0;10.0;10.0;40.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>399</y>
+      <w>91</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=[^]-[&gt;]</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;80.0;110.0;80.0;110.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1029</x>
+      <y>273</y>
+      <w>56</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>A1
+lt=[&gt;]-[]
+group=13</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1085</x>
+      <y>133</y>
+      <w>119</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Schritt zurück
+lt=[]-[&gt;]
+group=13</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>126</y>
+      <w>119</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Schritt zurück
+lt=[]-[&gt;]</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>546</x>
+      <y>287</y>
+      <w>56</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>A
+lt=[&gt;]-[]</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>287</y>
+      <w>56</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>0
+lt=[&gt;]-[]</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>126</x>
+      <y>504</y>
+      <w>343</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Videoplayer
+valign=top
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>126</x>
+      <y>525</y>
+      <w>343</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>126</x>
+      <y>518</y>
+      <w>343</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lw=5
+
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>224</x>
+      <y>532</y>
+      <w>238</w>
+      <h>231</h>
+    </coordinates>
+    <panel_attributes>
+
+
+
+Video
+
+bg=gray
+layer=3
+fontsize=24
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>672</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[&lt;]-[E]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>616</y>
+      <w>56</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>B
+lt=[&gt;]-[ ]
+group=18</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>126</x>
+      <y>476</y>
+      <w>119</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Schritt zurück
+lt=[]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>133</x>
+      <y>532</y>
+      <w>84</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>
+Start
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>133</x>
+      <y>553</y>
+      <w>84</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>
+Pause
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>133</x>
+      <y>595</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>
+15 Sekunden
+zurück
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>133</x>
+      <y>623</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>
+15 Sekunden
+vor
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>133</x>
+      <y>665</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>
+Code einlesen
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>133</x>
+      <y>700</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>
+Aufnahme 
+laden
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>133</x>
+      <y>735</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>
+Video 
+aufnehmen
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>707</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[&lt;]-[D]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>70</x>
+      <y>742</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[&lt;]-[C]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>602</x>
+      <y>518</y>
+      <w>343</w>
+      <h>14</h>
+    </coordinates>
+    <panel_attributes>lw=5
+
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>602</x>
+      <y>504</y>
+      <w>343</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Aufnahmenauswahl
+valign=top
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>553</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Aufnahme #A
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>581</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Aufnahme #B
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>602</x>
+      <y>182</y>
+      <w>343</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>609</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Aufnahme #C
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>637</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Aufnahme #D
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>665</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Aufnahme #E
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>609</x>
+      <y>693</y>
+      <w>329</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>Aufnahme #F
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>868</x>
+      <y>735</y>
+      <w>70</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Weiter
+
+bg=gray
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>882</x>
+      <y>749</y>
+      <w>49</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+group=18</panel_attributes>
+    <additional_attributes>50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>896</x>
+      <y>742</y>
+      <w>91</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=[^]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;80.0;110.0;80.0;110.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>469</y>
+      <w>119</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Schritt zurück
+lt=[]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>546</x>
+      <y>630</y>
+      <w>56</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>D
+lt=[&gt;]-[]
+group=18</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>476</x>
+      <y>217</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[A]-[&gt;]</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>476</x>
+      <y>294</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[B]-[&gt;]</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>476</x>
+      <y>371</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[C]-[&gt;]</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>217</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[A1]-[&gt;]</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>245</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[A1]-[&gt;]</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>273</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[A1]-[&gt;]</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>301</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[A1]-[&gt;]</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>329</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[A1]-[&gt;]</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>357</y>
+      <w>70</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[A1]-[&gt;]</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>560</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[B]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>588</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[B]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>616</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[B]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>644</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[B]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>672</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[B]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>952</x>
+      <y>700</y>
+      <w>56</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=[B]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1029</x>
+      <y>560</y>
+      <w>56</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>E
+lt=[&gt;]-[]
+group=18</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1085</x>
+      <y>546</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>QR-API der hmt-1
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1085</x>
+      <y>511</y>
+      <w>119</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Schritt zurück
+lt=[]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1029</x>
+      <y>700</y>
+      <w>56</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>C
+lt=[&gt;]-[]
+group=18</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLFrame</id>
+    <coordinates>
+      <x>1085</x>
+      <y>686</y>
+      <w>147</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Aufnahme-API der hmt-1
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1085</x>
+      <y>651</y>
+      <w>119</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Schritt zurück
+lt=[]-[&gt;]
+group=18</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>126</x>
+      <y>126</y>
+      <w>119</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Schritt zurück
+lt=[]-[&gt;]</panel_attributes>
+    <additional_attributes>150.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLObject</id>
+    <coordinates>
+      <x>602</x>
+      <y>525</y>
+      <w>343</w>
+      <h>245</h>
+    </coordinates>
+    <panel_attributes>
+group=18</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
