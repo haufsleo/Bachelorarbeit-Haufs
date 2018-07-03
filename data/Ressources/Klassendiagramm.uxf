@@ -4,10 +4,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>250</y>
+      <x>670</x>
+      <y>100</y>
       <w>170</w>
-      <h>100</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Class&gt;&gt;
 Video
@@ -22,15 +22,15 @@ Video
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>110</y>
+      <x>140</x>
+      <y>100</y>
       <w>170</w>
       <h>110</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Class&gt;&gt;
 Slide
 --
-- image: Image
+- imageUrl: String
 - title: String
 --
 
@@ -40,8 +40,8 @@ Slide
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>700</x>
-      <y>110</y>
+      <x>450</x>
+      <y>100</y>
       <w>170</w>
       <h>110</h>
     </coordinates>
@@ -56,41 +56,10 @@ SlideList
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>700</x>
-      <y>250</y>
-      <w>170</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Class&gt;&gt;
-VideoList
---
-- videos: Array&lt;Video&gt;
-- name: String
---
-
---</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>160</y>
-      <w>170</w>
-      <h>40</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
-m2=0..*
-m1=0..1</panel_attributes>
-    <additional_attributes>150.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>550</x>
-      <y>290</y>
+      <x>300</x>
+      <y>150</y>
       <w>170</w>
       <h>40</h>
     </coordinates>

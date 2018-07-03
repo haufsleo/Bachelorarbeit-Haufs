@@ -103,10 +103,10 @@
 }
 
 % environment
-\lstnewenvironment{Java}[1][]{%
-  \lstset{language=java, linewidth=80\charwidth, #1}
-  \captionsetup{options=JAVA}
-}{}
+%\lstnewenvironment{Java}[1][]{%
+%  \lstset{language=java, linewidth=80\charwidth, #1}
+%  \captionsetup{options=JAVA}
+%}{}
 
 
 % inline definition.
@@ -162,3 +162,45 @@
 \newcommand{\insertMore}[1]{\todo[inline, color=green!40]{#1 ergänzen}}
 \newcommand{\insertRef}[1]{\todo[color=blue!40]{#1 (Referenz fehlt)}}
 \newcommand{\importantTodo}[1]{\todo[color=red!40]{#1 (Wichtig!)}}
+
+% Programmcode
+
+
+
+\usepackage{geometry}
+\geometry{
+  left=2.5cm,
+  right=2.5cm,
+  top=2cm,
+  bottom=2cm,
+  bindingoffset=5mm
+}
+
+
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+
+\lstset{language=Java,
+  showspaces=false,
+  showtabs=false,
+  breaklines=true,
+  showstringspaces=false,
+  breakatwhitespace=true,
+  commentstyle=\color{pgreen},
+  keywordstyle=\color{pblue},
+  stringstyle=\color{pred},
+  tabsize=4,
+  basicstyle=\ttfamily,
+  moredelim=[il][\textcolor{pgrey}]{$$},
+  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%},
+  literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}1
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
