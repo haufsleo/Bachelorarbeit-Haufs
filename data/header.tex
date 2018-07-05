@@ -38,100 +38,6 @@
   {ö}{{\"o}}1
 }
 
-\usepackage{color}
-
-\lstdefinelanguage{JavaScript} {
-	morekeywords={
-		break,const,continue,delete,do,while,export,for,in,function,
-		if,else,import,in,instanceOf,label,let,new,return,switch,this,
-		throw,try,catch,typeof,var,void,with,yield
-	},
-	sensitive=false,
-	morecomment=[l]{//},
-	morecomment=[s]{/*}{*/},
-	morestring=[b]",
-	morestring=[d]'
-}
-
-\lstdefinelanguage{swift}
-{
-  morekeywords={
-    func,if,then,else,for,in,while,do,switch,case,default,where,break,continue,fallthrough,return,
-    typealias,struct,class,enum,protocol,var,func,let,get,set,willSet,didSet,inout,init,deinit,extension,
-    subscript,prefix,operator,infix,postfix,precedence,associativity,left,right,none,convenience,dynamic,
-    final,lazy,mutating,nonmutating,optional,override,required,static,unowned,safe,weak,internal,
-    private,public,is,as,self,unsafe,dynamicType,true,false,nil,Type,Protocol,
-  },
-  morecomment=[l]{//}, % l is for line comment
-  morecomment=[s]{/*}{*/}, % s is for start and end delimiter
-  morestring=[b]" % defines that strings are enclosed in double quotes
-}
-%
-% https://github.com/mwhittaker/texmf/blob/master/tex/latex/code/java.sty
-%
-\lstdefinelanguage{java}{%
-  % Basic settings
-  basicstyle=\smaller\ttfamily,
-  tabsize=4,
-  %frame=single,
-  showstringspaces=false,
-  mathescape=true,
-  breaklines=true,
-  numbers=left,
-  % Keywords, strings, and comments
-  keywords={%
-    abstract, continue, for, new, switch, assert, default, goto, package,
-    synchronized, boolean, do, if, private, this, break, double, implements,
-    protected, throw, byte, else, import, public, throws, case, enum,
-    instanceof, return, transient, catch, extends, int, short, try, char,
-    final, interface, static, void, class, finally, long, strictfp, volatile,
-    const, float, native, super, while
-  },
-  keywords=[2]{%
-  },
-  morestring=[b]",
-  morestring=[b]',
-  morecomment=[l]{//},
-  morecomment=[s]{/*}{*/},
-  % Colors and style
-  %backgroundcolor=\color{BackgroundYellow},
-  keywordstyle=\color{blue},
-  keywordstyle=[2]\color{DarkOrchid},
-  commentstyle=\color{ForestGreen},
-  stringstyle=\color{Red},
-  numberstyle=\color{SolarizedGrey}
-}
-
-% environment
-%\lstnewenvironment{Java}[1][]{%
-%  \lstset{language=java, linewidth=80\charwidth, #1}
-%  \captionsetup{options=JAVA}
-%}{}
-
-
-% inline definition.
-\newcommand*{\java}{\lstinline[{language=java}]}
-
-% input listing definition
-\newcommand{\inputjava}[2][ ]{%
-  {%
-  \captionsetup{options=JAVA}
-  \lstset{linewidth=80\charwidth}
-  \lstinputlisting[language=java,#1]{#2}
-  }
-}
-
-\lstset{
-	basicstyle=\footnotesize\ttfamily,
-	showstringspaces=false,
-	keywordstyle=\ttfamily\bfseries,
-	identifierstyle=\ttfamily,
-	stringstyle=\ttfamily,
-	xleftmargin=5pt,
-	xrightmargin=5pt,
-	aboveskip=\bigskipamount,
-	belowskip=\bigskipamount
-}
 
 \usepackage{minted}
 \usepackage[german]{fancyref}
@@ -166,6 +72,7 @@
 % Programmcode
 
 
+\begin{comment}
 
 \usepackage{geometry}
 \geometry{
@@ -176,31 +83,4 @@
   bindingoffset=5mm
 }
 
-
-\definecolor{pblue}{rgb}{0.13,0.13,1}
-\definecolor{pgreen}{rgb}{0,0.5,0}
-\definecolor{pred}{rgb}{0.9,0,0}
-\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
-
-\lstset{language=Java,
-  showspaces=false,
-  showtabs=false,
-  breaklines=true,
-  showstringspaces=false,
-  breakatwhitespace=true,
-  commentstyle=\color{pgreen},
-  keywordstyle=\color{pblue},
-  stringstyle=\color{pred},
-  tabsize=4,
-  basicstyle=\ttfamily,
-  moredelim=[il][\textcolor{pgrey}]{$$},
-  moredelim=[is][\textcolor{pgrey}]{\%\%}{\%\%},
-  literate=%
-  {Ö}{{\"O}}1
-  {Ä}{{\"A}}1
-  {Ü}{{\"U}}1
-  {ß}{{\ss}}1
-  {ü}{{\"u}}1
-  {ä}{{\"a}}1
-  {ö}{{\"o}}1
-}
+\end{comment}

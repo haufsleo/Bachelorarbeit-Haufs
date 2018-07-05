@@ -7,19 +7,18 @@
 %
 \chapter{Prototyp zur Unterstützung in der Sterilgutversorgung}
 \label{ch:Prototyp}
-Implementiert wurde ein Prototyp für die \emph{Realwear hmt-1}. 
-\insertMore{Prototyp}
+Implementiert wurde ein Prototyp für die \emph{Realwear hmt-1}. Die Funktionalität, verwendete Technologien sowie die Implementation werden im Folgenden vorgestellt.
 %
 % - - - - - Funktionalität des Prototypen - - - - - - - - 
 %
 \section{Funktionalität des Prototypen}
-Mithilfe des Prototypen sind zwei grundsätzliche Funktionalitäten möglich. Es ist einerseits möglich aus einer bestehenden Liste von Bildergalerien eine Galerie auszuwählen und anzuzeigen. Innerhalb der Bildergalerie ist es dann möglich, vor und zurück zu navigieren. Slideshow-Auswahl und Slides sind in einer Listenansicht dargestellt, die es ermöglicht, aufgrund der stark beschränkten Größe des Displays, stets 4-5 Elemente aufeinmal anzuzeigen und bei bedarf weitere Elemente nachzuladen. Dies wird mit einem Vor- und einem Zurückbutton realisiert.
+Mithilfe des Prototypen sind zwei grundsätzliche Funktionalitäten möglich. Es ist einerseits möglich aus einer bestehenden Liste von Bildergalerien eine Galerie auszuwählen und anzuzeigen. Andererseits kann eine Slideshow in Form einer JSON-Datei per QR-Code von einem Server geladen werden. Innerhalb der Bildergalerie ist es dann möglich, vor und zurück zu navigieren. Slideshow-Auswahl und Slides sind in einer Listenansicht dargestellt, die es ermöglicht, aufgrund der stark beschränkten Größe des Displays, stets 4-5 Elemente aufeinmal anzuzeigen und bei Bedarf weitere Elemente nachzuladen. Dies wird mit einem Vor- und einem Zurückbutton realisiert.
 
 Die andere Hauptfunktionalität betrifft Videos. Es ist möglich, ein Video aufzuzeichnen und dieses abzuspielen. Es ist ebenso möglich einen QR-Code mit einer Adresse auf ein MP4-Video aufzurufen und dieses Video zu streamen. Innerhalb eines abgespielten Videos ist es möglich, 10 Sekunden vor oder zurück zu spulen und zu pausieren/ zu starten. Zudem ist es möglich, Kapitelmarken zu setzen und in einer eigenen Ansicht zu bearbeiten.
 
 All diese Funktionalitäten können via Sprachsteuerung ausgewählt werden. Dazu müssen die Beschriftungen der Buttons laut vorgelesen werden. Die Brille interpretiert dann diese Eingaben als \emph{Click}- Events und ruft entsprechende Funktionen auf.
 
-In der Praxis können Bilder-Slideshow und Videos eingesetzt werden, um Angestellten der ZSVA wichtige Informationen zu medizinischen Instrumenten zu geben. So können Hyperlinks zu Bauanleitungen per QR-Code oder Barcode auf die Smartglass geladen werden und von einem externen Server gestreamt werden.
+In der Praxis können Bilder-Slideshow und Videos eingesetzt werden, um Angestellten der ZSVA wichtige Informationen zu medizinischen Instrumenten zu geben. So können Hyperlinks zu Anleitungen per QR-Code oder Barcode auf die Smartglass geladen werden und von einem externen Server gestreamt werden.
 %
 %
 %
@@ -30,10 +29,9 @@ In der Praxis können Bilder-Slideshow und Videos eingesetzt werden, um Angestel
 \section{Verwendete Technologien}
 \label{sec:Verwendete_Technologien}
 % 3 Seiten
-Für die Implementierung des Prototypen wurde \emph{Android Studio} mit Android in Version 23 verwendet, da dies die neueste Version ist, die von der \emph{hmt-1} unterstützt wird. Die API der \emph{hmt-1} ermöglicht den Zugriff auf die Hardwarefunktionen sowie auf die Sprachsteuerung der Smartglass. Mittels eines Eintrags \emph{\enquote{android:contentDescription}} können Sprachbefehle zu beliebigen Elementen hinzugefügt werden. Die Elemente reagieren dann auf den im Eintrag angegebenen Sprachbefehl und lösen ein \emph{Click}- Ereignis aus.
+Für die Implementierung des Prototypen wurde \emph{Android Studio} mit Android in Version 23 verwendet, da dies die neueste Version ist, die von der \emph{hmt-1} unterstützt wird. Die API der \emph{hmt-1} ermöglicht den Zugriff auf die Hardwarefunktiionalitäten sowie auf die Sprachsteuerung der Smartglass. Mittels eines Eintrags \emph{\enquote{android:contentDescription}} können Sprachbefehle zu beliebigen Elementen hinzugefügt werden. Die Elemente reagieren dann auf den im Eintrag angegebenen Sprachbefehl und lösen ein \emph{Click}- Ereignis aus.
 
 Die API der Smartglass hat zudem eine Funktionalität, um Barcodes und QR-Codes auszulesen und den Inhalt zurückzugeben und eine API, um Videos in hoher Auflösung aufzuzeichnen. 
-\insertMore{Verwendete Technologien}
 %
 %
 %
@@ -62,19 +60,19 @@ Das Programm folgt bei der Videofunktionalität dem Model-View-Controller (\emph
 \end{figure}
 Die Android-Anwendung wurde nach dem in Abbildung \ref{fig:Storyboard_des_Prototypen} gezeigten Storyboard erstellt. 
 
-Die Anwendung beginnt in einem Hauptmenü, welches ermöglicht, per Sprachbefehl einen von drei Buttons auszuwählen. Mit dem ersten Button wird der Nutzer zur Slideshow-Seite weitergeleitet. Beim zweiten Button wird auf die Videoanzeige und beim dritten Button auf die Video-Aufzeichnen Funktion weitergeleitet. Mittels eines \enquote{Schritt zurück}- Befehls der Smartglass wird der androidtypische Zurückbutton betätigt.
-%
+Die Anwendung beginnt in einem Hauptmenü, welches ermöglicht, per Sprachbefehl einen von zwei Buttons auszuwählen. Mit dem ersten Button wird der Nutzer zur Slideshow-Seite weitergeleitet. Beim zweiten Button wird auf die Videoanzeige und beim dritten Button auf die Video-Aufzeichnen Funktion weitergeleitet. Mittels eines \enquote{Schritt zurück}- Befehls der Smartglass wird der androidtypische Zurückbefehl betätigt.
 
-%
 Die Slideshow besteht aus zwei Ansichtstypen. In der ersten Ansicht, welche über das Hauptmenü erreichbar ist, wird eine Liste von Buttons angezeigt, über die einzelne Slides ausgewählt werden können. Am unteren Rand des Fensters ist ein \enquote{Weiter}- Button, welcher die Liste der Buttons aktualisiert, um weitere Slides zur Auswahl zu stellen. Dies ist notwendig, da bei der \emph{hmt-1} scrollen durch eine Liste nicht möglich ist.
+
+Über einen Button \enquote{Code einlesen} ist es möglich, einen QR-Code zu lesen, der einen Link zu einer JSON-codierten Sliedesliste kapselt und es so ermöglicht, die Slides nachzuladen.
 
 Wird eine Bilderliste ausgewählt, so wird auf eine Unterseite verlinkt. Diese besteht aus einem \emph{Image-View} sowie zwei Buttons: \enquote{vorwärts} und \enquote{zurück}. Im Bild wird das aktuelle Bild der Bilderliste angezeigt. Mit \enquote{weiter} wird das nächste, mit \enquote{zurück} das vorherige Bild angezeigt.
 
-Aus dem Hauptmenü kann zudem die \emph{Videoplayer}- Ansicht geöffnet werden. Diese Ansicht besteht aus zwei Bereichen. Links ist eine Sammlung von insgesamt 7 Buttons zum starten und stoppen, vor- bzw. zurückspulen des Videos um 10 Sekunden, Einlesen eines QR-Codes und einlesen des Videolinks in den Videoplayer. Zusätzlich sind noch zwei Buttons zum Aufnehmen eines Videos und zum Laden einer Aufnahme in den Player. Rechts ist ein Videofenster angebracht, in dem die Videos angezeigt werden.
+Aus dem Hauptmenü kann zudem die \emph{Videoplayer}-Ansicht geöffnet werden. Diese Ansicht besteht aus zwei Bereichen. Links ist eine Sammlung von insgesamt 7 Buttons zum starten und stoppen, vor- bzw. zurückspulen des Videos um 10 Sekunden, Einlesen eines QR-Codes und Einlesen des Videolinks in den Videoplayer. Zusätzlich sind noch zwei Buttons zum Aufnehmen eines Videos und zum Laden einer Aufnahme in den Player. Rechts ist ein Videofenster angebracht, in dem die Videos angezeigt werden.
 
 Einlesen des QR-Codes sowie die Aufnahme des Videos werden mithilfe der API der \emph{hmt-1} realisiert und das jeweilige Ergebnis an die aufrufende View übergeben. 
 
-Ist ein Video geladen, so werden die Buttons zur Bearbeitung und Verwendung der Kapitelmarken sichtbar. Mittels zweier Buttons an der unteren Bildschirmseite ist es möglich, die jeweils nächsten und vorherigen Kapitelmarke anzusteuern. Mit einem Button an der oberen Bildschirmhälfte ist es möglich, eigene Kapitelmarken an der aktuellen Position des Videos zu setzen.
+Ist ein Video geladen, so werden die Buttons zur Bearbeitung und Verwendung der Kapitelmarken sichtbar. Mittels zweier Buttons an der unteren Bildschirmseite ist es möglich, die jeweils nächsten und vorherigen Kapitelmarke anzusteuern. Mit einem Button an der oberen Bildschirmhälfte ist es möglich, eigene Kapitelmarken an der aktuellen Position des Videos zu setzen. Diese können mittels Spracheingabe benannt werden.
 
 Wird ein Button \enquote{Kapitel} aufgerufen, so wird eine eigene Ansicht zur Verwaltung von Kapitelmarken angezeigt, die ähnlich der Slideshowauswahl funktoniert. Hier wird eine Liste angezeigt, in der alle Kapitel aufgelistet werden. Wählt der Nutzer ein Kapitel aus, so erscheinen \enquote{Löschen} und \enquote{Abbrechen} Buttons. Mittels \enquote{Löschen} kann das ausgewählte Kapitel gelöscht werden. 
 %
@@ -84,9 +82,9 @@ Wird ein Button \enquote{Kapitel} aufgerufen, so wird eine eigene Ansicht zur Ve
 In Abbildung \ref{fig:Klassendiagramm} ist u.a. das Klassendiagramm des Models gezeigt. Es besteht aus insgesamt vier Klassen. Den Basisdatentypen \enquote{Slide}, \enquote{Video} sowie \enquote{VideoChapter}. 
 
 Die Klasse \enquote{Slide} kapselt einen String fileUrl und den Titel \enquote{title}. 
-Die Klasse \enquote{VideoChapter} dient zur Speicherung eines Kapitels eines Videos und wird von der Klasse Video verwendet. Ein VideoChapter besteht aus einer Ganzzahl position und dem Namen des Kapitels als String. 
+Die Klasse \enquote{VideoChapter} dient zur Speicherung eines Kapitels eines Videos und wird von der Klasse Video verwendet. Ein VideoChapter besteht aus einer Ganzzahl \enquote{position} und dem Namen des Kapitels als String. 
 Die Klasse \enquote{SlideList} kapselt eine ArrayList von Slides sowie den Namen der SlideList.
-Die Klasse \enquote{Video} besteht aus dem Namen der Datei, in welcher das Video im Dateisystem gespeichert wird, der Url des Videos, dem Titel, sowie aus einer ArrayList von VideoChapter. Video besitzt zudem öffentliche Methoden zum Hinzufügen und Entfernen von Kapiteln sowie zum Persistieren und Laden des Video-Models im Dateisystem.
+Die Klasse \enquote{Video} besteht aus dem Namen der Datei, in welcher das Video im Dateisystem gespeichert wird, der Url des Videos, dem Titel, sowie aus einer ArrayList von VideoChapter. Video besitzt zudem öffentliche Methoden zum Hinzufügen und Entfernen von Kapiteln sowie zum persistieren und laden des Video-Models im Dateisystem.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{data/bilder/Klassendiagramm.pdf}
@@ -97,5 +95,13 @@ Die Klasse \enquote{Video} besteht aus dem Namen der Datei, in welcher das Video
 % - - - - - Programmlogik - - - - - - - - 
 %
 \subsection{Programmlogik (Controller)}
-Die Programmlogik der Videofunktionalität wird durch einen Controller (vgl. Abbildung \ref{fig:Klassendiagramm}) durchgeführt. Dieser kapselt das Model, also ein Objekt der Klasse Video \enquote{selectedVideo}. Mittels verschiedener öffentlicher Methoden können das nächste Kapitel sowie das vorherige Kapitel abhängig von einer aktuellen Zeit bestimmt werden. Es können Kapitel zum Model hinzugefügt werden und das Model aus dem Dateisystem aktualisiert werden.
-\insertMore{Mehr zur Programmlogik}
+Die Programmlogik der Videofunktionalität wird durch einen Controller (vgl. Abbildung \ref{fig:Klassendiagramm}) durchgeführt. Dieser kapselt das Model, also ein Objekt der Klasse Video namens \enquote{selectedVideo}. Mittels verschiedener öffentlicher Methoden kann die Programmlogik realisiert werden. 
+
+\texttt{getVideoUriFromSelectedVideo()} liefert zum gekapselten Model eine Java-Uri, die anschließend in der View eingebunden werden kann.
+
+\texttt{getPreviousChapterTime(int)} und \texttt{getNextChapterTime(int)} liefern das nächste Kapitel sowie das vorherige Kapitel abhängig von einer aktuellen Zeit. 
+
+\texttt{addChapter(int)} fügt ein Kapitel zur übergebenen Zeit zum gekapselten Video hinzu. 
+\texttt{reloadVideoModelFromFilesystem()} und \texttt{saveModelToFilesystem()} laden bzw. speichern das Model in serialisierter Form im Dateisystem.
+
+Die Slideshow wird per HTTP-Request geladen und aus einem JSON-Objekt in ein Java-Objekt umgewandelt. Es ist ebenso möglich, eine Slideshow aus einem auf einem externen Server liegenden JSON-Datei per QR-Code zu laden. Die Bilder der Slideshow werden von einem Server geladen.
