@@ -1,0 +1,13 @@
+{
+    "name": "My video",
+    "url": "https://mylink.net/file.json",
+    "chapters": [{
+            "position": 10000,
+            "name": "Kapitel 1"
+        },
+        {
+            "position": 15000,
+            "name": "Kapitel 2"
+        }
+    ]
+}

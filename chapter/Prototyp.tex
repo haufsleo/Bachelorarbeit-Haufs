@@ -70,7 +70,7 @@ Wird eine Bilderliste ausgewählt, so wird auf eine Unterseite verlinkt. Diese b
 
 Aus dem Hauptmenü kann zudem die \emph{Videoplayer}-Ansicht geöffnet werden. Diese Ansicht besteht aus zwei Bereichen. Links ist eine Sammlung von insgesamt 7 Buttons zum starten und stoppen, vor- bzw. zurückspulen des Videos um 10 Sekunden, Einlesen eines QR-Codes und Einlesen des Videolinks in den Videoplayer. Zusätzlich sind noch zwei Buttons zum Aufnehmen eines Videos und zum Laden einer Aufnahme in den Player. Rechts ist ein Videofenster angebracht, in dem die Videos angezeigt werden.
 
-Einlesen des QR-Codes sowie die Aufnahme des Videos werden mithilfe der API der \emph{hmt-1} realisiert und das jeweilige Ergebnis an die aufrufende View übergeben. 
+Einlesen des QR-Codes sowie die Aufnahme des Videos werden mithilfe der API der \emph{hmt-1} realisiert. Der eingelesene Link enthält ein JSON-Objekt, welches den Link sowie die Kapitel enthält. Das Ergebnis wird in der View angezeigt.
 
 Ist ein Video geladen, so werden die Buttons zur Bearbeitung und Verwendung der Kapitelmarken sichtbar. Mittels zweier Buttons an der unteren Bildschirmseite ist es möglich, die jeweils nächsten und vorherigen Kapitelmarke anzusteuern. Mit einem Button an der oberen Bildschirmhälfte ist es möglich, eigene Kapitelmarken an der aktuellen Position des Videos zu setzen. Diese können mittels Spracheingabe benannt werden.
 
@@ -91,6 +91,8 @@ Die Klasse \enquote{Video} besteht aus dem Namen der Datei, in welcher das Video
     \caption{Klassendiagramm der Modelklassen sowie der Controllerklasse}
     \label{fig:Klassendiagramm}
 \end{figure}
+
+Die Slides sowie das Video können per Link auf ein JSON-Codiertes Model eingelesen werden. Die Struktur der JSON-Objekte ist in Listing \ref{lst:json_video} und \ref{lst:json_slides} dargestellt.
 %
 % - - - - - Programmlogik - - - - - - - - 
 %
@@ -104,4 +106,32 @@ Die Programmlogik der Videofunktionalität wird durch einen Controller (vgl. Abb
 \texttt{addChapter(int)} fügt ein Kapitel zur übergebenen Zeit zum gekapselten Video hinzu. 
 \texttt{reloadVideoModelFromFilesystem()} und \texttt{saveModelToFilesystem()} laden bzw. speichern das Model in serialisierter Form im Dateisystem.
 
-Die Slideshow wird per HTTP-Request geladen und aus einem JSON-Objekt in ein Java-Objekt umgewandelt. Es ist ebenso möglich, eine Slideshow aus einem auf einem externen Server liegenden JSON-Datei per QR-Code zu laden. Die Bilder der Slideshow werden von einem Server geladen.
+Die Slideshow wird per HTTP-Request geladen und aus einem JSON-Objekt (vgl. Listing \ref{lst:json_slides}) in ein Java-Objekt umgewandelt. Es ist ebenso möglich, eine Slideshow aus einem auf einem externen Server liegenden JSON-Datei per QR-Code zu laden. Die Bilder der Slideshow werden von einem Server geladen.
+
+Videos können ebenfalls per HTTP-Request geladen werden und aus einem JSON-Objekt (vgl. Listing \ref{lst:json_video}) in ein Java-Objekt umgewandelt. 
+
+\begin{minipage}{\linewidth}
+\begin{lstinputlisting}[%
+    caption={JSON-Struktur des Videos},%
+    captionpos=b, %
+    label={lst:json_video},%
+    language=json,%
+    firstnumber=1, %
+    basicstyle=\scriptsize, %
+    breaklines=true]
+{sourcecode/jsonStruktur_video.json}
+\end{lstinputlisting}
+\end{minipage}
+%
+\begin{minipage}{\linewidth}
+\begin{lstinputlisting}[%
+    caption={JSON-Struktur der Slides},%
+    captionpos=b, %
+    label={lst:json_slides},% 
+    language=json,%
+    firstnumber=1, %
+    basicstyle=\scriptsize, %
+    breaklines=true]
+{sourcecode/jsonStruktur_slides.json}
+\end{lstinputlisting}
+\end{minipage}
