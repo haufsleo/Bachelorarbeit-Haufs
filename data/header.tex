@@ -65,9 +65,32 @@
 
 % Todo commands
 % https://mirror.hmc.edu/ctan/macros/latex/contrib/todonotes/todonotes.pdf
-\newcommand{\insertMore}[1]{\todo[inline, color=green!40]{#1 ergänzen}}
-\newcommand{\insertRef}[1]{\todo[color=blue!40]{#1 (Referenz fehlt)}}
-\newcommand{\importantTodo}[1]{\todo[color=red!40]{#1 (Wichtig!)}}
+\newcommand{\insertMore}[1]{%
+\ifdevelop
+\todo[inline, color=green!40]{
+#1 ergänzen}
+\fi
+}
+
+\newcommand{\note}[1]{%
+\ifdevelop
+\todo{#1}
+\fi
+}
+
+\newcommand{\insertRef}[1]{%
+\ifdevelop
+\todo[color=blue!40]{
+#1 (Referenz fehlt)}
+\fi
+}
+
+\newcommand{\importantTodo}[1]{
+\ifdevelop
+\todo[color=red!40]{
+#1 (Wichtig!)}
+\fi
+}
 
 % Programmcode
 

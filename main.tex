@@ -1,9 +1,18 @@
+\newif\ifdevelop
+% Definition der Abgabeversion 
+\developtrue
+%\developfalse
+
+
+
 \documentclass[ngerman]{scrreprt}
 %
 % - - - Allgemeine Parameter - - - 
 %
 % - - - Abgabedatum der Arbeit - - - 
-\newcommand{\dateOfSubmission}{1. August 2018 \importantTodo{Abgabedatum anpassen}}
+\newcommand{\dateOfSubmission}{1. August 2018%
+\importantTodo{Abgabedatum anpassen}
+}
 % - - - Autor - - - 
 \newcommand{\authorOfWork}{Martin Leonard Haufs}
 % - - - Matrikelnummer - - -
@@ -28,13 +37,15 @@
 \begin{document}
 %
 % Liste der ToDos (für Entwicklung)
+\ifdevelop
     \listoftodos
     \setcounter{page}{1} 
     \pagenumbering{roman}
+\fi
 % - - - - - - - - - - - - - - - - - -
 %
 % - - - Titelseite - - - 
-\include{titlepage}
+\include{data/titlepage}
 \setcounter{page}{1} 
 \pagenumbering{roman}
 %
