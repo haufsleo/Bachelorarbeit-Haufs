@@ -2,7 +2,7 @@
 % Definition der Abgabeversion 
 \developtrue
 %\developfalse
-
+\newcommand{\documentversion}{0.02c}
 
 
 \documentclass[ngerman]{scrreprt}
@@ -36,11 +36,15 @@
 %
 \begin{document}
 %
-% Liste der ToDos (für Entwicklung)
+
 \ifdevelop
+    % Liste der ToDos (für Entwicklung)
     \listoftodos
     \setcounter{page}{1} 
     \pagenumbering{roman}
+    
+    \vfill	
+    Version: \documentversion
 \fi
 % - - - - - - - - - - - - - - - - - -
 %
