@@ -19,6 +19,10 @@ Die andere Hauptfunktionalität betrifft Videos. Es ist möglich, ein Video aufz
 All diese Funktionalitäten können via Sprachsteuerung ausgewählt werden. Dazu müssen die Beschriftungen der Buttons laut vorgelesen werden. Die Brille interpretiert dann diese Eingaben als \emph{Click}-Events und ruft entsprechende Funktionen auf.
 
 In der Praxis können Bilder-Slideshow und Videos eingesetzt werden, um Angestellten der ZSVA wichtige Informationen zu medizinischen Instrumenten zu geben. So können Hyperlinks zu Anleitungen per QR-Code oder Barcode auf die Smartglass geladen werden und von einem externen Server gestreamt werden.
+
+Um auch ohne Internetverbindung arbeiten zu können, ist es zu Beginn des Appstarts möglich, eine lokale Serverurl per QR-Code einzulesen. Diese wird anschließend vor alle per QR-Code eingelesenen Urls gesetzt, sodass es möglich ist auch in einer Umgebung wie der ZSVA, in der kaum Internetverbindung zur Verfügung steht, auf Videos und Bilder eines lokalen Servers zuzugreifen. 
+
+Zum Testen wurde ein lokaler NodeJS-Server aufgesetzt, welcher Mediendaten ausliefert.
 %
 %
 %
