@@ -1,14 +1,17 @@
 {
-    "slideList": [{
-        "slides": [{
-                "imageUrl": "https://mylink.net/file1.jpg",
-                "title": "Image1"
+    "slideList": [
+        {
+            "slides": [
+            {
+            "imageUrl": "https://mylink.net/file1.jpg",
+            "title": "Image1"
             },
             {
                 "imageUrl": "https://mylink.net/file2.jpg",
                 "title": "Image2"
             }
-        ],
-        "title": "Slideshow example"
-    }]
+            ],
+            "title": "Slideshow example"
+        }
+    ]
 }
