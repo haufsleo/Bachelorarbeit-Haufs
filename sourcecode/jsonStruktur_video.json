@@ -1,4 +1,5 @@
 {
+    "type":"Video",
     "name": "My video",
     "url": "https://mylink.net/file.json",
     "chapters": [{
