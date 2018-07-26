@@ -7,7 +7,7 @@
 %
 \chapter{Anforderungsanalyse}
 \label{ch:Anforderungsanalyse}
-Biologische Erreger spielen eine immer größere Rolle im Arbeitsalltag von Krankenhäusern, da mittlerweile multiresistente Keime existieren \cite{Niknam2017} und Menschen mit hoch ansteckenden Krankheiten behandelt werden müssen. Nach jeder Operation und jedem chirurgischen Eingriff sind medizinische Instrumente mit potentiell stark gesundheitsschädlichen Keimen kontaminiert. Die Bekämpfung von Krankeitserregern ist eine Kernaufgabe im Arbeitsalltag der Zentralen Sterilgutversorgung (ZSVA). Deren Arbeit wird im Folgenden kurz beschrieben, die Einsatzmöglichkeiten von Smartglasses dargestellt und die Anforderungen für Smartglasses in der Medizinprodukteaufbereitung herausgearbeitet. Abschließend werden die Datenschutzrechtlichen und arbeitssicherheitsspezifischen Anforderungen beschrieben.
+Biologische Erreger spielen eine immer größere Rolle im Arbeitsalltag von Krankenhäusern, da mittlerweile multiresistente Keime existieren \cite{Niknam2017} und Menschen mit hoch ansteckenden Krankheiten behandelt werden müssen. Nach jeder Operation und jedem chirurgischen Eingriff sind medizinische Instrumente mit potentiell stark gesundheitsschädlichen Keimen kontaminiert. Die Bekämpfung von Krankeitserregern ist eine Kernaufgabe im Arbeitsalltag der Aufbereitungseinheit für Medizinprodukte (AEMP). Deren Arbeit wird im Folgenden kurz beschrieben, die Einsatzmöglichkeiten von Smartglasses werden dargestellt und die Anforderungen für Smartglasses in der Medizinprodukteaufbereitung herausgearbeitet. Abschließend werden die Datenschutzrechtlichen und arbeitssicherheitsspezifischen Anforderungen beschrieben.
 %
 %
 %
@@ -27,25 +27,25 @@ Sterile chirurgische Instrumente werden in verschiedenen Abteilungen von Kranken
     \label{fig:Ablauf_der_Medizinprodukteaufbereitung}
 \end{figure}
 
-Die Aufbereitung von Medizinprodukten umfasst das Vorbereiten (Vorbehandeln, Sammeln, Vorreinigen und gegebenenfalls Zerlegen), das Reinigen, Desinfizieren, Nachspülen, gegebenenfalls Trocknen, visuelles Prüfen auf Sauberkeit und einwandfreien Zustand des Materials, gegebenenfalls Pflegen und Instandsetzen, Prüfen der Funktionalität, Kennzeichnen, Verpacken, Sterilisieren, Freigeben sowie Lagern \cite{AKI-ArbeitskreisInstrumenten-Aufbereitung2012}. Dieser gesamte Vorgang ist in nationalen Regelwerken, z. B. in Deutschland der Medizinprodukte-Betreiber-Verordnung und der Empfehlung des Robert Koch-Institutes, festgeschrieben und muss genauestens befolgt werden.
+Die Aufbereitung von Medizinprodukten umfasst das Vorbereiten (Vorbehandeln, Sammeln, Vorreinigen und gegebenenfalls Zerlegen), das Reinigen, Desinfizieren, Nachspülen, gegebenenfalls Trocknen, visuelles Prüfen auf Sauberkeit und einwandfreien Zustand des Materials, gegebenenfalls Pflegen und Instandsetzen, Prüfen der Funktionalität, Kennzeichnen, Verpacken, Sterilisieren, Freigeben sowie Lagern \cite{AKI-ArbeitskreisInstrumenten-Aufbereitung2012}. Dieser gesamte Vorgang ist in nationalen Regelwerken, z. B. in Deutschland der Medizinprodukte-Betreiber-Verordnung und der Empfehlung des Robert Koch-Institutes, festgeschrieben und muss genauestens befolgt werden \cite{AKI-ArbeitskreisInstrumenten-Aufbereitung2012}.
 
-Sterile Instrumente werden in sterilen Verpackungen und Containern transportiert und bis zu ihrem Einsatz steril gehalten. Durch den Einsatz werden die Instrumente verschmutzt und potentiell kontaminiert. Sie werden anschließend gesammelt und zur ZSVA geliefert \cite[S.~7]{Ruther2014}.
+Sterile Instrumente werden in sterilen Verpackungen bzw. Containern transportiert und bis zu ihrem Einsatz steril gehalten. Durch den Einsatz werden die Instrumente verschmutzt und potentiell kontaminiert. Sie werden anschließend gesammelt und zur AEMP geliefert \cite[S.~7]{Ruther2014}.
 
 
-Kontaminierte chirurgische Instrumente werden zum unreinen Bereich der ZSVA transportiert. Die Instrumente werden häufig mit Zusatzinformationen zu ihrem Zustand geliefert. Ein Angestellter der ZSVA ordnet die Instrumente nach Kategorien in Container ein. Die Zuordnung geschieht mittels Barcodes, die an den Instrumenten befestigt sind \cite[S.~9]{Ruther2014}.
+Kontaminierte chirurgische Instrumente werden zum unreinen Bereich der AEMP transportiert. Die Instrumente werden häufig mit Zusatzinformationen zu ihrem Zustand geliefert. Ein Angestellter der AEMP ordnet die Instrumente in Siebkörbe ein. Die Zuordnung geschieht meist mittels Barcodes, die an den Instrumenten befestigt sind \cite[S.~9]{Ruther2014}.
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{data/bilder/Sterilgut_Siebe_Quelle_DGSV.pdf}
     \caption{Verschiedene Sterilgüter, Siebe und chirurgische Instrumente \cite{DGSV-DeutscheGesellschaftfurSterilgutversorgung2004}}
-    \label{fig:Siebe_In_ZSVA}
+    \label{fig:Siebe_In_AEMP}
 \end{figure}
 
-Im anschließenden Reinigungsverfahren werden die Instrumente (vgl Abbildung \ref{fig:Siebe_In_ZSVA}) aus ihren Containern entnommen und meist in Reinigungsmaschinen gegeben. Manche Instrumente müssen jedoch von Hand gereinigt werden. Bei der Reinigung soll der Kontakt zwischen Mitarbeiter und Sterilgut so gering wie möglich gehalten werden. 
+Im anschließenden Reinigungsverfahren werden die Instrumente (vgl Abbildung \ref{fig:Siebe_In_AEMP}) aus ihren Containern entnommen und i.d.R. in Reinigungsmaschinen, sogenannte Reinigungs- und Desinfektionsgeräte (RDG), gegeben. Manche Instrumente müssen jedoch von Hand gereinigt werden. Bei der Reinigung soll der Kontakt zwischen Mitarbeiter und Sterilgut so gering wie möglich gehalten werden. 
 
 Nach der Reinigung wird das Sterilgut desinfiziert. Zu einer sichereren Desinfektion müssen die Geräte korrekt in Gitter einsortiert werden. Dabei hat jedes Instrument spezifische Eigenschaften wie Komplexität des Zusammenbauens oder auch schärfe von Klingen, die beachtet werden müssen \cite[S.~11]{Ruther2014}.
 
-Nachdem das Sterilgut desinfiziert wurde, wird es in den Sterilbereich der ZSVA überführt. Von nun an gilt es als steril. Hier werden die Instrumente nochmals auf äußere Einflüsse hin untersucht. Spezielle Wünsche des Kunden, wie der Ersatz bestimmter Komponenten werden nun berücksichtigt. Es werden anschließend Beschriftungen an den Sterilgütern befestigt, die mittels eines Barcode-Lesers ausgelesen werden können. Diese Beschriftungen enthalten neben dem Barcode den Namen des Instruments oder Containers und das Ablaufdatum, an dem die Sterilität abläuft. Das Sterilgut wird anschließend so verpackt, dass die Instrumente und Container bis zu ihrem Einsatz steril bleiben. Für jedes chirurgische Instrument gibt es eine charakteristische Anleitung, wie das Sterilgut zu verpacken ist.
+Nachdem das Sterilgut desinfiziert wurde, wird es in den Sterilbereich der AEMP überführt. Von nun an gilt es als steril. Hier werden die Instrumente nochmals auf äußere Einflüsse hin untersucht. Spezielle Wünsche des Kunden, wie der Ersatz bestimmter Komponenten werden nun berücksichtigt. Es werden anschließend Beschriftungen an den Sterilgütern befestigt, die mittels eines Barcode-Lesers ausgelesen werden können. Diese Beschriftungen enthalten neben dem Barcode den Namen des Instruments oder Containers und das Ablaufdatum, an dem die Sterilität abläuft. Das Sterilgut wird anschließend so verpackt, dass die Instrumente und Container bis zu ihrem Einsatz steril bleiben. Für jedes chirurgische Instrument gibt es eine charakteristische Anleitung, wie das Sterilgut zu verpacken ist.
 
 \begin{figure}[htbp]
     \centering
@@ -54,7 +54,7 @@ Nachdem das Sterilgut desinfiziert wurde, wird es in den Sterilbereich der ZSVA 
     \label{fig:AufbauDerSterilgutversorgung}
 \end{figure}
 
-Wie in Abbildung \ref{fig:AufbauDerSterilgutversorgung} schematisch gezeigt, besteht die ZSVA aus drei Abschnitten: einer kontaminierten und unsauberen, einer sauberen und einer sterilen Abteilung. Diese drei Bereiche sind durch Desinfektions- und Sterilisationsmaschinen getrennt. Diese bilden eine Barriere zwischen den verschiedenen Hygieneleveln. Zwischen den unreinen- und reinen Bereichen bestehen Durchreichen, um Instrumente zwischen den Bereichen zurückreichen zu können, falls diese nicht korrekt gereinigt und desinfiziert wurden. \cite[S.~24]{Ruther2014}. Sterilgut kann nach der Behandlung in den Maschinen sehr heiß sein, was dazu führt, dass Mitarbeiter der Sterilgutversorgung strenge Sicherheitsvorkehrungen einhalten müssen sowie spezielle Kleidung tragen müssen. Dies ist besonders in der unreinen Abteilung nötig, da ebenfalls verhindert werden muss, dass sich Mitarbeiter infizieren. Medizinische Instrumente sind mit Barcodes ausgestattet, welche in verschiedenen Schritten des Arbeitsprozesses ausgelesen werden. Computer sind essentieller Bestandteil der ZSVA, insbesondere der Reinabteilung. Hier unterstützen Softwarelösungen Angestellte in der Zusammenstellung der Instrumente. \cite[S.~25]{Ruther2014}.
+Wie in Abbildung \ref{fig:AufbauDerSterilgutversorgung} schematisch gezeigt, besteht die AEMP aus drei Abschnitten: einer kontaminierten und unsauberen, einer sauberen und einem sterilen Bereich. Diese drei Bereiche sind durch Desinfektions- und Sterilisationsgeräte getrennt. Diese bilden eine Barriere zwischen den verschiedenen Hygieneleveln. Zwischen den unreinen- und reinen Bereichen bestehen Durchreichen, um Instrumente zwischen den Bereichen zurückreichen zu können, falls diese nicht korrekt gereinigt und desinfiziert wurden. \cite[S.~24]{Ruther2014}. Sterilgut kann nach der Behandlung in den Maschinen sehr heiß sein, was dazu führt, dass Mitarbeiter der Sterilgutversorgung spezielle Kleidung tragen und strenge Sicherheitsvorkehrungen einhalten müssen. Dies ist besonders in der unreinen Abteilung nötig, da ebenfalls verhindert werden muss, dass sich Mitarbeiter infizieren. Medizinische Instrumente sind mit Barcodes ausgestattet, welche in verschiedenen Schritten des Arbeitsprozesses ausgelesen werden. Computer sind essentieller Bestandteil der AEMP, insbesondere der Reinabteilung. Hier unterstützen Softwarelösungen Angestellte in der Zusammenstellung der Instrumente. \cite[S.~25]{Ruther2014}.
 %
 %
 %
@@ -67,14 +67,14 @@ Wie in Abbildung \ref{fig:AufbauDerSterilgutversorgung} schematisch gezeigt, bes
 % 3 Seiten
 In der Medizinprodukteaufbereitung werden mehrere tausend verschiedene medizinische Instrumente aufbereitet. Diese können sehr einfach bis sehr komplex strukturiert sein. Angestellte stehen oft unter hohem Zeitdruck und haben  vielfältige Sicherheits- und Hygienevorschriften zu beachten. Daraus resultieren viele Fehlerquellen bei der korrekten Durchführung von Anweisungen, da Angestellte nicht immer alle Anweisungen und Anleitungen zu allen verschiedenen Instrumenten und allen einzelnen Prozesschritten kennen.
 
-In den heutigen ZSVAs finden sich typischerweise Barcodescanner für die automatische Prozessdokumentation. Instrumente werden in einem Behälter mit einem eindeutigen Barcode gesammelt. Für jeden Prozessschritt wird der Barcode abgescannt und der Prozessschritt automatisch dokumentiert.
+In den heutigen AEMPs finden sich typischerweise Barcodescanner für die automatische Prozessdokumentation. Instrumente werden in einem Behälter mit einem eindeutigen Barcode gesammelt. Für jeden Prozessschritt wird der Barcode abgescannt und der Prozessschritt automatisch dokumentiert.
 
-Angestellte im unreinen Bereich könnten von einem Assistenzsystem profitieren. 
-In diesem Umfeld, in dem Oberflächen verschmutzt und kontaminiert sind, müssen spezielle hygienische Anforderungen erfüllt werden. So muss beispielsweise Sicherheitskleidung getragen werden. Klassische Desktop-Computer sowie Touchscreens sind hier aus hygienischen Gründen nicht einsetzbar \cite[S.~28]{Ruther2014}. Ein Assistenzsystem muss zudem abwaschbar sein und steril gehalten werden können. Es muss also möglich sein, die Hardware im unreinen Bereich anzuwenden. 
-
-Eine wichtige Anforderung an Assistenzsysteme ist zudem die Akzeptanz durch die Anwender (\enquote{Konzept der sozialen Normen}). Es ist wichtig zu beachten, dass Smartglasses, wie alle tragbaren Geräte, auch eine modische Komponente enthalten. So sollten Faktoren, die aus der Bekleidung bekannt sind, auch für den Einsatz von Smartglasses und in arbeitsbezogenen Zusammenhängen relevant sein. Es muss also der \enquote{tragbare Komfort} betrachtet werden. Das heißt, dass das Tragen der Smartglass nicht mit körperlichem Druck oder gar Schmerzen verbunden ist.  Der \enquote{emotionale Komfort} ist ein weiterer Aspekt, der Beachtung finden muss, d.h. ein Angestellter darf sich nicht schämen, wenn er die Smartglass trägt \cite{Hein2016}.
+Angestellte im Dekontaminationsbereich könnten von einem Assistenzsystem profitieren. 
+In diesem Umfeld, in dem Oberflächen verschmutzt und kontaminiert sind, müssen spezielle hygienische Anforderungen erfüllt werden. Klassische Desktop-Computer sowie Touchscreens sind hier aus hygienischen Gründen nur in einer streng desinfizierbaren Form einsetzbar \cite[S.~28]{Ruther2014}. Ein Assistenzsystem muss zudem abwaschbar sein und steril gehalten werden können. Es muss also möglich sein, die Hardware im unreinen Bereich anzuwenden. 
 
 Die Benutzerfreundlichkeit des Systems spielt ebenfalls eine wichtige Rolle. Das System sollte den regulären Arbeitsablauf der Angestellten weder verzögern noch stören. Informationen müssen präzise und kontextabhängig angezeigt werden. So muss der Angestellte selbst entscheiden können, zu welchem Instrument Zusatzinformationen angezeigt werden, da viele Instrumente und deren Behandlung wohl bekannt sind. Für diese Instrumente werden keine Zusatzinformationen benötigt und das System sollte hierbei keine Rolle spielen. Für unbekanntere und komplexere Instrumente müssen jedoch schnell Informationen angezeigt werden können, damit der Arbeitnehmer unterstützt werden kann \cite[S.~29]{Ruther2014}.
+
+Eine wichtige Anforderung an Assistenzsysteme ist zudem die Akzeptanz durch die Anwender (\enquote{Konzept der sozialen Normen}). Es ist wichtig zu beachten, dass Smartglasses, wie alle tragbaren Geräte, auch eine modische Komponente enthalten. So sollten Faktoren, die aus der Bekleidung bekannt sind, auch für den Einsatz von Smartglasses und in arbeitsbezogenen Zusammenhängen relevant sein. Es muss also der \enquote{tragbare Komfort} betrachtet werden. Das heißt, dass das Tragen der Smartglass nicht mit körperlichem Druck oder gar Schmerzen verbunden ist.  Der \enquote{emotionale Komfort} ist ein weiterer Aspekt, der Beachtung finden muss, d.h. ein Angestellter darf sich nicht schämen, wenn er die Smartglass trägt \cite{Hein2016}.
 %
 %
 %
@@ -84,9 +84,11 @@ Die Benutzerfreundlichkeit des Systems spielt ebenfalls eine wichtige Rolle. Das
 %
 \section{Smartglasses im Bereich der Medizinprodukteaufbereitung}
 \label{sec:Smartglasses_im_Bereich_der_Medizinprodukteaufbereitung}
-Laut einer Befragung von Krulikowski et al. aus dem Jahr 2015 \cite{Hein2016} ist ein Drittel der Befragten der Meinung, dass das Tragen einer Smartglass die Menschen \enquote{seltsam} aussehen lässt (25,3\%) und dass die Verwendung einer Smartglass die Privatsphäre anderer Menschen bedroht (29,7\%). Überraschenderweise schätzten 15,9\% die Vorteile einer Smartglass, um das Leben effizienter zu gestalten, und nur 12,4\% waren der Meinung, dass die Verwendung einer Smartglass einfach ist. \cite{Hein2016}. Dies ist jedoch die Meinung der Befragten zur privaten Nutzung von Smartglasses, lässt sich jedoch auch zum Teil auf den beruflichen Einsatz übertragen.
+Laut einer Befragung von Krulikowski et al. aus dem Jahr 2015 \cite{Hein2016} ist ein Drittel der Befragten der Meinung, dass das Tragen einer Smartglass die Menschen \enquote{seltsam} aussehen lässt (25,3\%) und dass die Verwendung einer Smartglass die Privatsphäre anderer Menschen bedroht (29,7\%). Überraschenderweise schätzten 15,9\% die Vorteile einer Smartglass, um das Leben effizienter zu gestalten, und nur 12,4\% waren der Meinung, dass die Verwendung einer Smartglass einfach ist. \cite{Hein2016}. Dies ist zwar die Meinung der Befragten zur privaten Nutzung von Smartglasses, lässt sich jedoch auch zum Teil auf den beruflichen Einsatz übertragen.
 
-Im Folgenden werden die Einsatzmöglichkeiten von Smartglasses im beruflichen Kontext der ZSVA beleuchtet. Anschließend werden die spezifischen Anforderungen an Smartglasses in diesem Einsatzbereich analysiert und abschließend Datenschutzrechtliche sowie arbeitsschutzrechtliche Aspekte des Einsatzes von Smartglasses herausgearbeitet.
+Im Folgenden werden die Einsatzmöglichkeiten von Smartglasses im beruflichen Kontext der AEMP beleuchtet. Anschließend werden die spezifischen Anforderungen an Smartglasses in diesem Einsatzbereich analysiert und abschließend Datenschutzrechtliche sowie arbeitsschutzrechtliche Aspekte des Einsatzes von Smartglasses herausgearbeitet. 
+%
+\note{überflüssig?}
 %
 %
 %
@@ -97,7 +99,7 @@ Im Folgenden werden die Einsatzmöglichkeiten von Smartglasses im beruflichen Ko
 \subsection{Einsatzmöglichkeiten}
 \label{sec:Einsatzmoeglichkeiten}
 % 4 Seiten
-Heute müssen Angestellte der ZSVA mit IT-Systemen an stationären Arbeitsplätzen arbeiten. Mobile Geräte wie Tablets erfordern eine Bedienung mit den Händen. Smartglasses dagegen sind immer einsatzbereit und ermöglichen, je nach Modell entweder in ihrer Basisfunktionalität oder vollkommen, freihändiges Arbeiten. Sie ermöglichen den permanenten Zugriff auf Informationen und können so auch außerhalb des regulären Arbeitsplatzes eingesetzt werden. So können Angestellte der ZSVA auch beidhändig arbeiten. Beidhändiges Arbeiten ist in der ZSVA von großer Bedeutung.
+Heute müssen Angestellte der AEMP mit IT-Systemen an stationären Arbeitsplätzen arbeiten. Mobile Geräte wie Tablets erfordern eine Bedienung mit den Händen. Smartglasses dagegen sind immer einsatzbereit und ermöglichen freihändiges Arbeiten. Sie ermöglichen den permanenten Zugriff auf Informationen und können so auch außerhalb des stationären Arbeitsplatzes eingesetzt werden. So können Angestellte der AEMP auch beidhändig arbeiten. Beidhändiges Arbeiten ist in der AEMP von großer Bedeutung, da komplizierte Interaktionen mit Sterilgut beide Hände erfordern. So müssen Instrumente auseinandergebaut und wieder zusammengesetzt werden.
 
 Mithilfe der eingebauten Foto- und Videokamera können Arbeitsschritte lückenlos aufgezeichnet und dokumentiert werden. So können defekte oder problembehaftete Instrumente schnell beschrieben werden.
 
@@ -105,20 +107,24 @@ Mithilfe von Smartglasses können Anleitungs- und Hilfevideos erstellt und abger
 
 Treten Probleme im Arbeitsalltag auf, können Smartglasses auch dazu genutzt werden, um mithilfe der Videokamera mit anderen Kollegen zu kommunizieren. So kann einem Gesprächspartner per Video das betreffende Sterilgut gezeigt werden und so schnell eine Lösung gefunden werden.
 
-Schritt-für-Schritt Anleitungen erhöhen zudem die Flexibilität von Mitarbeitern im Unternehmen, da diese so an verschiedenen Stellen der Medizinprodukteaufbereitung eingesetzt werden können und dank der Unterstützung der Datenbrille möglicherweise auf Schulungen verzichten können. Monotonen Tätigkeiten wird somit ebenfalls vorgebeugt, da Angestellte so in verschiedenen Bereichen der ZSVA eingesetzt werden.
-
 Beispielsweise kann, wenn ein Angestellter, der ein noch unbekanntes Problem mit einem Gerät hat, einen Kollegen ins Sichtfeld des Mitarbeiters mithilfe der Smartglass integrieren. Er kann ihm die notwendigen Informationen zur Verfügung stellen, um das Problem zu lösen. Einmal gelöst können alle Eigenheiten des jeweiligen Störfalles in Form eines Videoprotokolls in eine Datenbank eingefügt werden.
 
-Smartglasses können auch dazu eingesetzt werden, Angestellte vor Gefahren zu warnen. So können Fehler im Arbeitsalltag verhindert werden, um Prozesse sicherer zu machen.
+Schritt-für-Schritt Anleitungen erhöhen zudem die Flexibilität von Mitarbeitern im Unternehmen, da diese so an verschiedenen Stellen der Medizinprodukteaufbereitung eingesetzt werden können und dank der Unterstützung der Datenbrille möglicherweise auf Schulungen verzichtet werden kann. Monotonen Tätigkeiten wird somit ebenfalls vorgebeugt, da Angestellte so in verschiedenen Bereichen der AEMP eingesetzt werden.
 
-Smartglasses bieten nicht nur den immer perfekt eingestellten Bildschirm, der unabhängig von der Körpergröße des Anwenders ist, sondern lassen sich auch individualisieren. So kann ein Mitarbeiter die Datenbrille nach seinem Kenntnisstand einstellen und individuell anpassen. So kann auf Qualifikation, Erfahrung und Computer-Affinität eingegangen werden.
+Smartglasses können auch dazu eingesetzt werden, Angestellte vor Gefahren zu warnen. So können Fehler im Arbeitsalltag verhindert werden, um Prozesse sicherer zu machen. 
+%
+\note{bsp. für Gefahren}
+
+Smartglasses bieten einen unabhängig von der Körpergröße des Anwenders eingestellten Bildschirm, der sich auch individualisieren lässt. So kann ein Mitarbeiter die Datenbrille nach seinem Kenntnisstand einstellen und individuell anpassen. Es kann also auf Qualifikation, Erfahrung und Computer-Affinität eingegangen werden.
 
 Ein Lagersystem kann die Handlungen der Benutzer koordinieren und somit Nutzern mitteilen, in welchem Arbeitsschritt sich andere Mitarbeiter befinden. So können redundante Arbeitsschritte verhindert werden. 
+%
+\note{Ausführlicher Formullieren}
 
-Der Einsatz von Smartglasses in Unternehmen kann sowohl Vorteile, als auch Nachteile mit sich bringen und die Investition in diese neue Technologie muss anhand des erwarteten Nutzens und der Kosten für die Implementierung und Wartung der Technologie abgewogen werden. Das erwartete Kosten-Nutzen-Verhältnis umfasst das Verhältnis aller erwarteten mit der Einführung der Technologie verbundenen gegenwärtigen und zukünftigen Vorteile sowie der monetären Kosten von Smartglasses für ein Unternehmen. \cite{Hein2016}. 
-
-Investitionen in neue Technologien basieren in der Regel auf der Berücksichtigung des erwarteten Nutzens und der Kosten für die Implementierung und Wartung einer neuen Technologie. Das erwartete Kosten-Nutzen-Verhältnisses beschreibt das Verhältnis aller erwarteten damit verbundenen gegenwärtigen und zukünftigen Vorteile sowie der natürlichen und nicht-monetären Kosten von Smart Glasses für ein Unternehmen. Zu den direkten Vorteilen von Smartglasses gehören betriebliche Einsparungen, die durch verbesserte interne Effizienzsteigerung oder durch den Ersatz teurerer alternativer Technologien erzielt werden können. Indirekte Leistungen beziehen sich auf die Auswirkungen auf andere Geschäftsprozesse \cite{Hein2016}.
+Der Einsatz von Smartglasses in Unternehmen kann sowohl Vorteile, als auch Nachteile mit sich bringen und die Investition in diese neue Technologie muss anhand des erwarteten Nutzens und der Kosten für die Implementierung und Wartung der Technologie abgewogen werden. Investitionen in neue Technologien basieren in der Regel auf der Berücksichtigung des erwarteten Nutzens und der Kosten für die Implementierung und Wartung einer neuen Technologie. Das erwartete Kosten-Nutzen-Verhältnisses beschreibt das Verhältnis aller erwarteten damit verbundenen gegenwärtigen und zukünftigen Vorteile sowie der natürlichen und nicht-monetären Kosten von Smart Glasses für ein Unternehmen. Zu den direkten Vorteilen von Smartglasses gehören betriebliche Einsparungen, die durch verbesserte interne Effizienzsteigerung erzielt werden können \cite{Hein2016}.
 Die Kosten der Technologieeinführung resultieren in der Regel aus externen Beratungsleistungen für Planung, Beschaffung von Hard- und Softwaretechnologie, Schulung des Personals oder Kommunikationsaufwand \cite{Hein2016}. Eine häufige Kritik in öffentlichen Diskussionen und Medien, ist, dass die Nutzer abgelenkt werden, Elektrosmog ausgesetzt sind oder von hohen Betriebstemperaturen der Smartglasses betroffen sein könnten. Bisher hat jedoch keine vorherige Untersuchung ergeben, dass diese negativen Auswirkungen auf die Gesundheit des Benutzers bestehen, was durch die Neuheit der Technologie erklärt werden könnte \cite{Hein2016}.
+%
+\note{Schlussfolgerungen für AEMP}
 %
 %
 %
@@ -128,29 +134,33 @@ Die Kosten der Technologieeinführung resultieren in der Regel aus externen Bera
 %
 \subsection{Spezifische Anforderungen an Smartglasses im Bereich der Medizinprodukteaufbereitung}
 \label{sec:Spezifische_Anforderungen_an_Smartglasses}
-Smartglasses im Bereich der Medizinprodukteaufbereitung müssen viele spezielle Anforderungen erfüllen. Es müssen im Gegensatz zu klassischen Computern mit Maus und Tastatur bzw. Touch-gesteuerten Geräten wie Tablets neuartige Bedienkonzepte verwendet werden. So lassen sich Smartglasses mittels Sprach- und Gestensteuerung bedienen.
-Sprachsteuerung in der Medizinprodukteaufbereitung muss sehr sensitiv sein. In den Räumen, in denen die Brillen eingesetzt werden sollen, herrscht ein sehr großer Hintergrundgeräuschpegel, welcher die Sprachsteuerung bei fehlender Noice-Cancellation massiv beeinträchtigen würde. Denkbar ist ebenfalls der Einsatz einer personenabhängigen Spracherkennung, da im Raum möglicherweise mehrere Nutzer Smartglasses mittels Sprachsteuerung bedienen bzw. normale Gespräche missinterpretiert werden könnten. 
+Smartglasses im Bereich der Medizinprodukteaufbereitung müssen viele spezielle Anforderungen erfüllen. Im Gegensatz zu klassischen Computern mit Maus und Tastatur bzw. Touch-gesteuerten Geräten wie Tablets müssen neuartige Bedienkonzepte verwendet werden. So lassen sich Smartglasses mittels Sprach- und Gestensteuerung bedienen.
+Sprachsteuerung in der Medizinprodukteaufbereitung muss sehr präzise sein. In den Räumen, in denen die Brillen eingesetzt werden sollen, herrscht ein sehr großer Hintergrundgeräuschpegel, welcher die Sprachsteuerung bei fehlender Noice-Cancellation massiv beeinträchtigen würde. Denkbar ist ebenfalls der Einsatz einer personenabhängigen Spracherkennung, da im Raum möglicherweise mehrere Nutzer Smartglasses mittels Sprachsteuerung bedienen bzw. normale Gespräche missinterpretiert werden könnten. 
 
 Es ist nötig, neuartige User-Interfacesysteme zu entwickeln, die es ermöglichen, alle nötigen Informationen auf einem kleinen Display wie dem einer Datenbrille darzustellen. 
 
-Smartglasses, die von Angestellten der ZSVA verwendet werden, müssen abwaschbar und steril gehalten werden können. Nur so kann es möglich sein, diese einzusetzen. Sie müssen also wasserdicht sein, ein einfacher Spritzwasserschutz reicht nicht aus. Zudem müssen die Brillen robust genug sein, um die aggressiven Reinigungs- und Desinfektionsmittel zu überstehen.
-
-Smartglasses müssen aufgrund des ganztägigen Einsatzes zudem weitere Hardwareanforderungen erfüllen. Sie müssen möglichst leicht sein, damit sie die Angestellten in ihrer Arbeit nicht beeinträchtigen. Der Trage- sowie der Bedienkomfort der Brille hat hier einen großen Stellenwert. 
+Smartglasses, die von Angestellten der AEMP verwendet werden, müssen abwaschbar sein und desinfiziert gehalten werden können. Sie müssen also wasserdicht sein. Zudem müssen die Brillen robust genug sein, um die aggressiven Reinigungs- und Desinfektionsmittel zu überstehen.
 
 Da mit reizenden und materialzersetzenden Chemikalien gearbeitet wird, sollten eingesetzte Smartglasses möglichst unempfindlich gegen diese Substanzen sein. In der Medizinprodukteaufbereitung werden sogenannte \emph{Prozesschemikalien} wie Ätzalkalien, Aldehyde, Chlordioxid, Säuren (Zitronen- oder Phosphorsäure oder Peressigsäure) eingesetzt, die bei Kontakt mit empfindlichen Materialien zum Teil starke Zersetzungen hervorrufen können \cite{AKI-ArbeitskreisInstrumenten-Aufbereitung2012}.
 
+Die Anforderungen der Smartglass hängen ganz von ihrem Einsatzgebiet ab. Sollen Smartglasses ganztägig eingesetzt werden müssen sie strenge Hardwareanforderungen erfüllen. Sie müssen möglichst leicht sein, damit sie die Angestellten in ihrer Arbeit nicht beeinträchtigen. Der Trage- sowie der Bedienkomfort der Brille hat hier einen großen Stellenwert. Müssen sie dagegen nur für wenige Stunden getragen werden, beispielsweise um ein Schulungsvideo abzuspielen, ist der Tragekomfort nicht ganz so wichtig.
+
 Die Smartglasses müssen über einen ausreichend starken Akku verfügen, um mindestens einen acht Stunden Arbeitstag durchzuhalten bzw. müssen einen austauschbaren Akku haben. Ebenfalls denkbar ist eine externe Stromquelle, die mittels eines Stromkabels an die Brille angeschlossen ist.
 
-Aufgrund der großen Lautstärke im Bereich der ZSVA muss die Sprachsteuerung in der Lage sein, auch bei großen Hintergrundgeräuschen die Sprachsteuerung gewährleisten zu können. Ebenfalls sollte die Sprachsteuerung auf eine Person abgestimmt werden können, damit mehrere parallel sprechende Menschen sich nicht gegenseitig beeinträchtigen.
+Anwendungen für Smartglasses in der Medizinprodukteaufbereitung benötigen eine ständige Verbindung ins Internet bzw. auf ein lokales Netzwerk, um auf Datenbanken und externe Videos sowie Bilder zugreifen zu können. Falls ebenfalls eine Video- Streaming- oder Videotelefoniefunktionalität implementiert werden soll, ist eine Unterstützung moderner und schneller Datenverbindungen nötig. Da eine Mobilfunkverbindung in Gebäuden nicht garantiert werden kann und für größere Datenmengen nicht praktikabel ist, sollte die Brille über WLAN verfügen und sich eigenständig ins Internet einwählen können.
 
-Anwendungen für Smartglasses in der Medizinprodukteaufbereitung benötigen eine ständige Verbindung ins Internet bzw. auf ein lokales Netzwerk, um auf Datenbanken und externe Videos sowie Bilder zugreifen zu können. Falls ebenfalls eine Video- Streaming- oder Videotelefoniefunktionalität implementiert werden soll, ist eine Unterstützung moderner und schneller Datenverbindungen realisiert sein. Da eine Mobilfunkverbindung in Gebäuden nicht garantiert werden kann und für größere Datenmengen nicht praktikabel ist, sollte die Brille über WLAN verfügen und sich eigenständig ins Internet einwählen können ohne ein externes Smartphone zu benötigen.
-
-Zur Identifikation von möglicherweise sehr kleinen Barcodes und QR-Codes sowie potentiell auch kleiner Gegenstände ist eine möglichst hochauflösende Kamera nötig. Diese sollte möglichst das Sichtfeld des Anwenders direkt erfassen können. Weitere Sensoren zur Bestimmung von anderen Medien, wie beispielsweise RFID-Codes, sind ebenfalls denkbar.
+Zur Identifikation von möglicherweise sehr kleinen Barcodes sowie potentiell auch kleiner Gegenstände ist eine möglichst hochauflösende Kamera nötig. Diese sollte möglichst das Sichtfeld des Anwenders direkt erfassen können. Weitere Sensoren zur Bestimmung von anderen Medien, wie beispielsweise RFID-Codes, sind ebenfalls denkbar.
 %
 %\insertMore{Spezifische Anforderungen an Smartglasses}
 %
 
-Nach Analyse der Anforderungen und Betrachtung der in Kapitel \ref{sec:VergleichSmartglasses} beschriebenen Smartglasses kommt die \emph{Realwear hmt-1} am ehesten in Frage. Sie ist abwischbar (wasserfest), ist Robust genug und verfügt über einen lange anhaltenden Akku. Die Spracherkennung ist mittels einer aktiven Noice-Cancellation auch in lauter Umgebung wie der Medizinprodukteaufbereitung möglich. Sie verfügt über WLAN und ist auch ohne ein gekoppeltes externes Smartphone internetfähig. Die Kamera der Brille ist hochauflösend genug, um auch kleine Barcodes und QR-Codes erfassen zu können.
+Nach Analyse der Anforderungen und Betrachtung der in Kapitel \ref{sec:VergleichSmartglasses} beschriebenen Smartglasses kommt die \emph{Realwear hmt-1} am ehesten für eine reine Videoanwendung als Assisted Reality-Brille in Frage. Sie ist abwischbar (wasserfest)
+%
+\note{Ip66 Schutz}
+%
+, ist Robust genug und verfügt über einen lange anhaltenden Akku. Die Spracherkennung ist mittels einer aktiven Noice-Cancellation auch in lauter Umgebung wie der Medizinprodukteaufbereitung möglich. Sie verfügt über WLAN und ist auch ohne ein gekoppeltes externes Smartphone internetfähig. Die Kamera der Brille ist hochauflösend genug, um auch kleine Barcodes und QR-Codes erfassen zu können, jedoch nicht in der Lage, kleinere Datamatrix-Codes zu lesen. Diese Datamatri-Codes werden jedoch häufig in der AEMP eingesetzt. 
+%
+\note{auf datamatrixcodes eingehen}
 %
 %
 %
@@ -160,7 +170,7 @@ Nach Analyse der Anforderungen und Betrachtung der in Kapitel \ref{sec:Vergleich
 %
 \subsection{Datenschutz}
 \label{sec:Datenschutz}
-Der Einsatz von Smartglasses wird in der Literatur schwerpunktmäßig aus datenschutzrechtlicher Hinsicht erörtert \cite{Berkemeier2017}. Smartglasses können eine nicht zu ignorierende Einschränkung in das Grundrecht auf informationelle Selbstbestimmung dar gemäß Artikel 2 des Grundgesetzes.
+Der Einsatz von Smartglasses wird in der Literatur schwerpunktmäßig aus datenschutzrechtlicher Hinsicht erörtert \cite{Berkemeier2017}. Smartglasses stellen eine nicht zu ignorierende Einschränkung in das Grundrecht auf informationelle Selbstbestimmung dar gemäß Artikel 2 des Grundgesetzes.
 
 Smartglasses nehmen potentiell dauerhaft Video- und Tonaufnahmen auf und machen es möglich per Gesichtserkennung Personen im Umfeld des Nutzers zu identifizieren \cite[S.~38f]{Schwenke2016}. Eine Besonderheit beim Einsatz von Smartglasses ist, dass diese im betrieblichen Einsatz durchgängig genutzt werden und somit nicht nur die Nutzer der Brille, sondern auch alle in ihrem Umfeld befindlichen Personen betroffen sind. Aus Sicht des Datenschutzes sind Smartglasses den invasiven Technologien und Werkzeugen zu zuordnen \cite{Berkemeier2017}. Somit muss der Datenschutzaspekt essenzieller Bestandteil beim Design informationstechnischer Systeme in Smartglasses sein. 
 
@@ -189,6 +199,8 @@ Die Speicherung der Daten erfordert ebenfalls genauere Betrachtung: Speicherort,
 
 Es kann also zusammenfassend davon ausgegangen werden, dass bei einer nicht- Zustimmung betroffener Personen, Persönlichkeitsrechte bei Bild- oder Tonaufnahmen sowie der Verwendung der Brille verletzt werden können. Erleichtert werden kann dieser Eingriff, wenn die Datenbrille beispielsweise wie bei der \emph{Epson Moverio BT-200} (vgl. Abschnitt \ref{sec:Epson_Moverio_BT-200}) über eine kleine Leuchtdiode verfügt, die die Kameranutzung bzw. deren Aufnahme impliziert \cite[S.~161]{Schwenke2016}. All diese möglichen Verletzungen der Persönlichkeitsrechte lassen sich mit einer Einwilligung der betroffenen Personen lösen, was im beruflichen Umfeld - vor allem in einem geschlossenen System wie der Medizinprodukteaufbereitung - möglich ist. So werden umfassende schriftliche Einwilligungen aller betroffenen Personen, also sowohl der Nutzer der Brille als auch aller Personen im Umfeld der Benutzer der Brille, benötigt \cite[S.~139f]{Schwenke2016}.
 %
+\insertMore{Aus sicht der IT - Gesichtsverpixelung, meldefunktion..}
+%
 %
 %
 % - - - - - Arbeitssicherheit - - - - - - - - - - - 
@@ -202,7 +214,7 @@ Sowohl aus ethischer als auch aus geschäftspolitischer Sicht muss jede Innovati
 
 Angestellte der Medizinprodukteaufbereitung müssen in ihrer Arbeit hoch konzentriert sein, da die Gefahr besteht, sich bei einem Fehler mit hochinfektiösen Bakterien oder Viren anzustecken. So darf eine eingesetzte Smartglass diese Aufmerksamkeit nicht beeinträchtigen. Da Smartglasses unterschiedlich gebaut sind, müssen diese auch getrennt betrachtet werden. Smartglasses im Stile von \emph{Google Glass} haben ein transparentes Display, welches im Sichtfeld des Betrachters liegt. Es ist möglich, durch den Bildschirm zu schauen und nur nach Bedarf Informationen im Rahmen der assistierten Realität anzuzeigen. Andere Smartglasses wie die \emph{Realwear hmt1} haben ein undurchsichtiges Display und schränken das Sichtfeld des Nutzers deutlich mehr ein. Hier kann es schneller zu einer Ablenkung durch die Brille kommen. Ebenfalls wichtig ist, dass die Brille nur assistierend zur Seite stehen darf und nur bei Bedarf hinzugezogen werden sollte.
 
-In der ZSVA werden meist Schutzbrillen getragen. Eine Smartglass darf diese Schutzbrille nicht ersetzen, sondern nur ergänzend getragen werden. Manche Brillen wie \emph{Glass} Smartglasses, insbesondere VR-Brillen, haben bei manchen Menschen den Effekt der sogenannten \enquote{virtual sickness} oder auch \enquote{Virtual reality sickness} kommen. Dieser Effekt tritt ein, wenn zu viel auf den Bildschirm geschaut wird. Der Effekt tritt besonders bei VR-Brillen auf, kann jedoch auch bei AR-Smartglasses auftreten, wenn der Raum, in dem sich die Person befindet, durch die Smartglass verändert und die Bewegung des Nutzers nicht mit der Bewegung in der virtuellen Realität bzw. der augmentierten Realität übereinstimmt \cite{Moss2011}. Treten diese Symptome bei einem Angestellten gehäuft auf, sollten Pausen eingelegt werden oder Aufgaben übernommen werden, in der keine Smartglass benötigt wird.
+In der AEMP werden meist Schutzbrillen getragen. Eine Smartglass darf diese Schutzbrille nicht ersetzen, sondern nur ergänzend getragen werden. Manche Brillen wie \emph{Glass} Smartglasses, insbesondere VR-Brillen, haben bei manchen Menschen den Effekt der sogenannten \enquote{virtual sickness} oder auch \enquote{Virtual reality sickness} kommen. Dieser Effekt tritt ein, wenn zu viel auf den Bildschirm geschaut wird. Der Effekt tritt besonders bei VR-Brillen auf, kann jedoch auch bei AR-Smartglasses auftreten, wenn der Raum, in dem sich die Person befindet, durch die Smartglass verändert und die Bewegung des Nutzers nicht mit der Bewegung in der virtuellen Realität bzw. der augmentierten Realität übereinstimmt \cite{Moss2011}. Treten diese Symptome bei einem Angestellten gehäuft auf, sollten Pausen eingelegt werden oder Aufgaben übernommen werden, in der keine Smartglass benötigt wird.
 
 Smartglasses können aber auch sehr gut im Sinne der Arbeitssicherheit eingesetzt werden. So kann die Assistenz durch die Brillen Unfälle verhindern, da Nutzer geschult sind und ggf. bei unbekannten Tätigkeiten Informationen abrufen können. Dies schützt vor allem ungeschulte Angestellte davor, möglicherweise  Fehler zu machen. Die Möglichkeit Hilfe heranzuziehen, kann dazu beitragen Unfälle zu vermeiden.
 %
@@ -215,11 +227,11 @@ Smartglasses können aber auch sehr gut im Sinne der Arbeitssicherheit eingesetz
 \subsection{Grenzen des Einsatzes von Smartglasses}
 \label{sec:Grenzen_des_Einsatzes_von_Smartglasses}
 % 2 Seiten  
-Der Einsatz von Smartglasses im Bereich der Augmented Reality ist beschränkt. Da es sich bei den hier betrachteten Smartglasses, wie in Kapitel \ref{sec:Einordnung_von_Smartglasses} gezeigt, um Brillen der assistierten Realität handelt, bieten diese nicht die vollen Möglichkeiten von \emph{echten} AR-Brillen. Es können nur kontextsensitive Informationen eingeblendet werden und mittels Interaktion verarbeitet werden. Wirkliche Augmented Reality- oder sogar Virtual Realityeffekte sind hier jedoch gar nicht erwünscht und benötigt.
+Der Einsatz von Smartglasses im Bereich der Augmented Reality ist beschränkt. Da es sich bei den hier betrachteten Smartglasses, wie in Kapitel \ref{sec:Einordnung_von_Smartglasses} gezeigt, um Brillen der assistierten Realität handelt, bieten diese nicht die vollen Möglichkeiten von \emph{echten} AR-Brillen. Es können nur kontextsensitive Informationen eingeblendet werden und mittels Interaktion verarbeitet werden. Virtual Realityeffekte sind hier jedoch gar nicht erwünscht und benötigt.
 
 Der Einsatz von Smartglassanwendungen wird zudem stark durch die sehr geringe Größe des Displays limitiert. Dies muss bei der Realisierung von Anwendungen für Smartglasses großen Stellenwert haben, insbesondere, wo, wie in Kapitel \ref{sec:Smartglasses_im_Bereich_der_Medizinprodukteaufbereitung} beschrieben, die Anforderungen an Smartglasses unter anderem die Benutzerfreundlichkeit sowie die Benutzerzufriedenheit der Anwendung sind.
 
-Smartglasses müssen mit einer Schutzbrille kombinierbar sein, was manche Smartglasses von Grund aus ausschließt. Wie in Kapitel \ref{sec:VergleichSmartglasses} beschrieben, ist beispielsweise die \emph{Epson Moverio BT-200} (Kapitel \ref{sec:Epson_Moverio_BT-200}) nicht mit einer Schutzbrille kombinierbar und kann daher für den unreinen Bereich der Medizinprodukteaufbereitung nicht verwendet werden. \emph{Glass} und \emph{hmt-1} dagegen sind extra für den Einsatz mit externen Brille konzipiert. Die \emph{hmt-1} ist sogar für den Einsatz mit Visieren und Helmen konzipiert worden und lässt sich somit sehr gut auch im unreinen Bereich der ZSVA einsetzen.
+Smartglasses müssen mit einer Schutzbrille kombinierbar sein, was manche Smartglasses von Grund aus ausschließt. Wie in Kapitel \ref{sec:VergleichSmartglasses} beschrieben, ist beispielsweise die \emph{Epson Moverio BT-200} (Kapitel \ref{sec:Epson_Moverio_BT-200}) nicht mit einer Schutzbrille kombinierbar und kann daher für den unreinen Bereich der Medizinprodukteaufbereitung nicht verwendet werden. \emph{Glass} und \emph{hmt-1} dagegen sind extra für den Einsatz mit externen Brille konzipiert. Die \emph{hmt-1} ist sogar für den Einsatz mit Visieren und Helmen konzipiert worden und lässt sich somit sehr gut auch im unreinen Bereich der AEMP einsetzen. Wünschenswert wäre eine Smartglass, welche direkt in eine Schutzbrille integriert wäre.
 
-Weiter denkbar, aber jenseits der Betrachtung von Smartglasses, wäre der Einsatz echter AR-Brillen wie der Hololens (\emph{Mixed Reality}). Hier könnten wesentlich weitreichendere AR-Effekte erzielt werden. 
+Weiter denkbar, aber jenseits der Betrachtung von Assisted Reality-Brillen, wäre der Einsatz echter AR-Brillen wie der Hololens (\emph{Mixed Reality}). Hier könnten wesentlich weitreichendere AR-Effekte erzielt werden. 
 %\insertMore{? Grenzen des Einsatzes von Smartglasses ergänzen}
