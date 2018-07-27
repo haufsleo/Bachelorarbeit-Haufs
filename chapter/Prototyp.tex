@@ -9,7 +9,11 @@
 \label{ch:Prototyp}
 In dieser Arbeit wurde ein Prototyp für die \emph{Realwear hmt-1} implementiert. Die Funktionalität, verwendete Technologien sowie die Implementation werden im Folgenden vorgestellt.
 %
+%
+%
 % - - - - - Funktionalität des Prototypen - - - - - - - -
+%
+%
 %
 \section{Funktionalität des Prototypen}
 Mithilfe des Prototypen sind zwei grundsätzliche Funktionalitäten möglich. Es ist einerseits möglich aus einer bestehenden Liste von Bildergalerien eine Galerie auszuwählen und anzuzeigen. Andererseits kann eine Slideshow in Form einer JSON-Datei per QR-Code von einem Server geladen werden. Innerhalb der Bildergalerie ist es dann möglich, vor und zurück zu navigieren. Slideshowauswahl und Slides sind in einer Listenansicht dargestellt, die es ermöglicht, aufgrund der stark beschränkten Größe des Displays, stets 4-5 Elemente auf einmal anzuzeigen und bei Bedarf weitere Elemente nachzuladen. Dies wird mit einem Vor- und einem Zurückbutton realisiert.
@@ -83,7 +87,11 @@ Ist ein Video geladen, so werden die Buttons zur Bearbeitung und Verwendung der 
 
 Wird ein Button \enquote{Kapitel} aufgerufen, so wird eine eigene View zur Verwaltung von Kapitelmarken angezeigt, die ähnlich der Slideshowauswahl funktoniert. Hier wird eine Liste angezeigt, in der alle Kapitel aufgelistet werden. Wählt der Nutzer ein Kapitel aus, so erscheinen \enquote{Löschen}- und \enquote{Abbrechen}-Buttons. Mittels \enquote{Löschen} kann das ausgewählte Kapitel gelöscht werden. 
 %
+%
+%
 % - - - - - Datenmodell - - - - - - - - 
+%
+%
 %
 \subsection{Datenmodell (Model)}
 \label{sec:Datenmodell}
@@ -101,7 +109,11 @@ Die Klasse \enquote{Video} besteht aus dem Namen der Datei, in welcher das Video
 
 Die Slides sowie das Video können per Link auf ein JSON-Codiertes Model eingelesen werden. Die Struktur der JSON-Objekte ist in Listing \ref{lst:json_video} und \ref{lst:json_slides} dargestellt.
 %
+%
+%
 % - - - - - Programmlogik - - - - - - - - 
+%
+%
 %
 \subsection{Programmlogik (Controller)}
 Die Programmlogik der Videofunktionalität wird durch einen Controller (vgl. Abbildung \ref{fig:Klassendiagramm}) durchgeführt. Dieser kapselt das Model, also ein Objekt der Klasse Video namens \enquote{selectedVideo}. Mittels verschiedener öffentlicher Methoden kann die Programmlogik realisiert werden. 
@@ -143,11 +155,15 @@ Videos können ebenfalls per HTTP-Request geladen werden und aus einem JSON-Obje
 \end{lstinputlisting}
 \end{minipage}
 %
+%
+%
 % - - - - - Lokaler Server - - - - - - - - 
+%
+%
 %
 \subsection{Lokaler Server}
 \label{sec:Lokaler_Server}
-Als lokaler Server wird ein NodeJs-Server verwendet. Dieser leitet die in einem Ordner \enquote{Public} liegenden Dateien an den Client weiter. 
+Als lokaler Server wird ein NodeJs-Server verwendet. Dieser liefert Zugriff auf alle in einem Ordner \enquote{Public} liegenden Dateien. So lassen sich URLs erstellen und per QR-Code von der Smartglass aus laden, die direkte Links zu Dateien enthalten.
 
 Die Bilder werden zur Anzeige heruntergeladen, die Videos werden gestreamt. Zum Streamen wird die URL des Videos in eine URI überführt und dem Android-Videoplayer übergeben.
 
