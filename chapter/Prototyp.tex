@@ -12,7 +12,7 @@ In dieser Arbeit wurde ein Prototyp für die \emph{Realwear hmt-1} implementiert
 % - - - - - Funktionalität des Prototypen - - - - - - - -
 %
 \section{Funktionalität des Prototypen}
-Mithilfe des Prototypen sind zwei grundsätzliche Funktionalitäten möglich. Es ist einerseits möglich aus einer bestehenden Liste von Bildergalerien eine Galerie auszuwählen und anzuzeigen. Andererseits kann eine Slideshow in Form einer JSON-Datei per QR-Code von einem Server geladen werden. Innerhalb der Bildergalerie ist es dann möglich, vor und zurück zu navigieren. Slideshowauswahl und Slides sind in einer Listenansicht dargestellt, die es ermöglicht, aufgrund der stark beschränkten Größe des Displays, stets 4-5 Elemente aufeinmal anzuzeigen und bei Bedarf weitere Elemente nachzuladen. Dies wird mit einem Vor- und einem Zurückbutton realisiert.
+Mithilfe des Prototypen sind zwei grundsätzliche Funktionalitäten möglich. Es ist einerseits möglich aus einer bestehenden Liste von Bildergalerien eine Galerie auszuwählen und anzuzeigen. Andererseits kann eine Slideshow in Form einer JSON-Datei per QR-Code von einem Server geladen werden. Innerhalb der Bildergalerie ist es dann möglich, vor und zurück zu navigieren. Slideshowauswahl und Slides sind in einer Listenansicht dargestellt, die es ermöglicht, aufgrund der stark beschränkten Größe des Displays, stets 4-5 Elemente auf einmal anzuzeigen und bei Bedarf weitere Elemente nachzuladen. Dies wird mit einem Vor- und einem Zurückbutton realisiert.
 
 Die andere Hauptfunktionalität betrifft Videos. Es ist möglich, ein Video aufzuzeichnen und dieses abzuspielen. Es ist ebenso möglich einen QR-Code mit einer Adresse auf ein MP4-Video aufzurufen und dieses Video zu streamen. Innerhalb eines abgespielten Videos ist es möglich, 10 Sekunden vor oder zurück zu spulen und zu pausieren und zu starten. Zudem ist es möglich, Kapitelmarken zu setzen und in einer eigenen Ansicht zu bearbeiten.
 
@@ -38,6 +38,8 @@ Für die Implementierung des Prototypen wurde \emph{Android Studio} mit Android 
 Die API der Smartglass hat zudem eine Funktionalität, um Barcodes und QR-Codes auszulesen und den Inhalt zurückzugeben und eine API, um Videos in hoher Auflösung aufzuzeichnen. 
 
 Der Prototyp speichert aufgezeichnete Videos auf dem Gerät und serialisiert das dazugehörige Datenobjekt (vgl. Kapitel \ref{sec:Datenmodell}) auf dem Gerätespeicher. Externe Videos und Bilder werden per JSON-Objekt, welches über einen Link von einem Server geladen wird, geladen. Dieses JSON-Objekt enthält alle notwendigen Informationen. So enthält das JSON-Objekt der Slideshow ein Array aus Objekten mit Namen und Url. Beim Video wird der Name, die Url und die Kapitel mit Namen und Position in Millisekunden gespeichert (vgl. Listing \ref{lst:json_video} und \ref{lst:json_slides}).
+
+Der verwendete lokale Server ist ein NodeJs-Server, welcher über die IP-Adresse und den verwendeten Port einen Ordner auf dem Dateisystem freigibt.
 %
 %
 %
@@ -140,3 +142,15 @@ Videos können ebenfalls per HTTP-Request geladen werden und aus einem JSON-Obje
 {sourcecode/jsonStruktur_slides.json}
 \end{lstinputlisting}
 \end{minipage}
+%
+% - - - - - Lokaler Server - - - - - - - - 
+%
+\subsection{Lokaler Server}
+\label{sec:Lokaler_Server}
+Als lokaler Server wird ein NodeJs-Server verwendet. Dieser leitet die in einem Ordner \enquote{Public} liegenden Dateien an den Client weiter. 
+
+Die Bilder werden zur Anzeige heruntergeladen, die Videos werden gestreamt. Zum Streamen wird die URL des Videos in eine URI überführt und dem Android-Videoplayer übergeben.
+
+Aufgerufen wird der Server über zwei QR-Codes. Der erste Code initialisiert den Server auf dem Client. Die Server-BasisURL wird zunächst beim Appstart durch einen QR-Code geladen. Dieser enthält die IP-Adresse des Servers sowie den Port, über den die Serveranwendung angesprochen wird. In den QR-Codes von Slidelists sowie Videos werden lediglich die Unterpfade gekapselt, welche zur entsprechenden Datei führen. Intern werden Pfad zum Server und zum Unterpfad zusammengesetzt.
+%
+\note{Auf Korrektheit prüfen: Lokaler Server}
