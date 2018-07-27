@@ -165,8 +165,8 @@ Videos können ebenfalls per HTTP-Request geladen werden und aus einem JSON-Obje
 \label{sec:Lokaler_Server}
 Als lokaler Server wird ein NodeJs-Server verwendet. Dieser liefert Zugriff auf alle in einem Ordner \enquote{Public} liegenden Dateien. So lassen sich URLs erstellen und per QR-Code von der Smartglass aus laden, die direkte Links zu Dateien enthalten.
 
-Die Bilder werden zur Anzeige heruntergeladen, die Videos werden gestreamt. Zum Streamen wird die URL des Videos in eine URI überführt und dem Android-Videoplayer übergeben.
+Die Bilder werden zur Anzeige heruntergeladen, die Videos werden gestreamt. Zum Streamen wird die URL des Videos in eine \emph{URI} überführt und dem Android-Videoplayer übergeben.
 
-Aufgerufen wird der Server über zwei QR-Codes. Der erste Code initialisiert den Server auf dem Client. Die Server-BasisURL wird zunächst beim Appstart durch einen QR-Code geladen. Dieser enthält die IP-Adresse des Servers sowie den Port, über den die Serveranwendung angesprochen wird. In den QR-Codes von Slidelists sowie Videos werden lediglich die Unterpfade gekapselt, welche zur entsprechenden Datei führen. Intern werden Pfad zum Server und zum Unterpfad zusammengesetzt.
-%
-\note{Auf Korrektheit prüfen: Lokaler Server}
+Aufgerufen wird der Server über zwei QR-Codes. Der erste Code initialisiert den Server auf dem Client. Die Server-Basis-URL wird zunächst beim Appstart durch einen QR-Code geladen. Dieser enthält die IP-Adresse des Servers sowie den Port, über den die Serveranwendung angesprochen wird. In den QR-Codes von Slidelists sowie Videos werden lediglich die Unterpfade gekapselt, welche zur entsprechenden Datei führen. Innerhalb der Smartglass-Anwendung werden Pfad zum Server und zum Unterpfad zusammengesetzt.
+
+Die Hauptadresse des Servers wird mithilfe einer statischen Hilfsklasse innerhalb des Smartglass-Prototypen gespeichert und ist somit in allen Ansichten der App verfügbar.
