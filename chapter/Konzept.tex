@@ -27,10 +27,7 @@ Manche Brillen wie die \emph{Glass} von Google besitzen zusätzlich eine Touchba
 
 Durch die Kamera der Smartglass, die auch alle der in Kapitel \ref{sec:VergleichSmartglasses} beschriebenen Geräte haben, lassen sich zudem Gesten- und mithilfe des Bewegungssensors auch Kopfbewegungen erkennen. So lassen sich über Gesten der Hände beispielsweise mögliche virtuelle Elemente in der grafischen Oberfläche der Brille auswählen. Swipe- und Scrollgesten wären so ebenfalls denkbar wie die zuvor erwähnten Pinch-to-zoom Geste.
 
-Per Bar- und QR-Codes können direkte Befehle an die Brille gegeben werden. So ist es möglich Methoden der App auf der Brille aufzurufen oder Hyperlinks auszuwählen. Es wäre beispielsweise denkbar, einen QR-Code zu verwenden, um Videos zu einem chirurgischen Instrument oder OP-Sieb anzuzeigen oder zu einer Montage- oder Packanleitung. Ein Barcode kann als Beschriftung eines Siebes oder Sterilgutes verwendet werden und damit automatisch lokalisiert werden. Barcodes sind in ihrer Anzahl an Ziffern stark begrenzt.
-%
-\note{Beschränkung von Barcodes- Ziffernzahl}
-QR-Codes sind zweidimensionale (Matrix-) Barcodes und können bis zu 4.296 alphanumerische Zeichen speichern \cite{INCORPORATED2018}. So können auch komplexe Informationen \emph{mit einem Blick} erfasst werden.
+Per Bar- und QR-Codes können direkte Befehle an die Brille gegeben werden. So ist es möglich Methoden der App auf der Brille aufzurufen oder Hyperlinks auszuwählen. Es wäre beispielsweise denkbar, einen QR-Code zu verwenden, um Videos zu einem chirurgischen Instrument oder OP-Sieb anzuzeigen oder zu einer Montage- oder Packanleitung. Ein Barcode kann als Beschriftung eines Siebes oder Sterilgutes verwendet werden und damit automatisch lokalisiert werden. Barcodes sind in ihrer Anzahl an Ziffern stark begrenzt. QR-Codes sind zweidimensionale (Matrix-) Barcodes und können bis zu 4.296 alphanumerische Zeichen speichern \cite{INCORPORATED2018}. So können auch komplexe Informationen \emph{mit einem Blick} erfasst werden.
 
 Die im folgenden Unterkapitel (\ref{sec:Objekterkennung}) näher beschriebene Objekterkennung ermöglicht ebenfalls weitreichende Eingabemöglichkeiten.
 %
@@ -84,8 +81,6 @@ Abschließend sei der Einsatz von Barcodes genannt, die die Position für Virtue
 Werden Videos oder Bilder auf einer Smartglass erzeugt, können diese entweder (lokal) auf der Brille bzw. deren SD-Karte oder (extern) auf einem Server (\emph{Clouddienst, Server}) gespeichert werden. Werden die Bilder lokal gespeichert, so benötigt die betreffende Anwendung eine entsprechende Datenbankverwaltung der Bilder bzw. Videos. Bilder können im Normalfall in der Originalgröße der Kamera gespeichert werden, Videos müssen dagegen evtl. komprimiert werden, da sie sonst zu groß sind, um auf einen Server geladen zu werden. 
 
 Steuerung der Eingaben lassen sich auf unterschiedliche Weise regeln. So ist es möglich, Links zu Videos oder Bildern in einer Datenbank zu speichern und per Barcode oder QR-Code darauf zuzugreifen, also den Identifikationsschlüssel des entsprechenden Videos in der Datenbank zu verlinken. Der Link könnte auch zu einem extern gespeicherten Medium in einem QR Code gespeichert und direkt verlinkt werden. Diese Datenbank kann im Gerät oder auf einem externen Server gespeichert sein. 
-%
-\note{Satzbau}
 
 Kurze Texte wie Beschriftungen können direkt in einem QR-Code (evtl. verschlüsselt) gespeichert werden. So spart sich der Anwender die Verbindung zu einem Server und die dort hinterlegte Datenbank, in der der Text gespeichert wäre.
 
@@ -130,5 +125,3 @@ Medien in einer Smartglass können auf unterschiedlichste Weise erfasst werden. 
 Medien, die auf einer Smartglass erzeugt werden, müssen ggf. komprimiert werden oder anders weiterverarbeitet werden, bevor sie verwendet werden können. So müssen Video- und Audioaufnahmen ggf. digital aufbereitet werden, da in der Sterilgutversorgung eine sehr starke Geräuschkulisse herrscht. Monotone Hintergrundgeräusche lassen sich heute sehr gut herausfiltern. Hier ist es natürlich hilfreich, wenn das Mikrofon der Smartglass von sich aus schon über eine Geräuschunterdrückung (\emph{Noise Cancellation}) verfügt.
 
 Video- und Fotoaufnahmen müssen in hoher Auflösung erfolgen, da bei der Erkennung von QR- und Barcodes hohe eine gewisse Mindestauflösung erforderlich ist. Dies ist nötig, da die OP-Siebe in der AEMP mit sehr kleinen Codes ausgestattet sind. Diese müssen zudem auf einer mittleren Entfernung (1 bis 2~m) gelesen werden können.
-%
-\insertMore{Datamatrix Codes}
