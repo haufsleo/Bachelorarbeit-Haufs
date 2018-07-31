@@ -16,9 +16,10 @@ In dieser Arbeit wurde ein Prototyp für die \emph{Realwear hmt-1} implementiert
 %
 %
 \section{Funktionalität des Prototypen}
-Mithilfe des Prototypen sind zwei grundsätzliche Funktionalitäten möglich. Es ist einerseits möglich aus einer bestehenden Liste von Bildergalerien eine Galerie auszuwählen und anzuzeigen. Andererseits kann eine Slideshow in Form einer JSON-Datei per QR-Code von einem Server geladen werden. Innerhalb der Bildergalerie ist es dann möglich, vor und zurück zu navigieren. Slideshowauswahl und Slides sind in einer Listenansicht dargestellt, die es ermöglicht, aufgrund der stark beschränkten Größe des Displays, stets 4-5 Elemente auf einmal anzuzeigen und bei Bedarf weitere Elemente nachzuladen. Dies wird mit einem Vor- und einem Zurückbutton realisiert.
+Mithilfe des Prototypen sind zwei grundsätzliche Funktionalitäten möglich. Es ist einerseits möglich, aus einer bestehenden Liste von Bildergalerien eine Galerie auszuwählen und anzuzeigen. Andererseits kann eine Slideshow in Form einer JSON-Datei per QR-Code von einem Server geladen werden. Innerhalb der Bildergalerie ist es dann möglich, vor und zurück zu navigieren. 
+Slideshowauswahl und Slides sind in einer Listenansicht dargestellt, die es ermöglicht, stets 4-5 Elemente auf einmal anzuzeigen und bei Bedarf weitere Elemente nachzuladen. Dies wird mit einem Vor- und einem Zurückbutton realisiert.
 
-Die andere Hauptfunktionalität betrifft Videos. Es ist möglich, ein Video aufzuzeichnen und dieses abzuspielen. Es ist ebenso möglich einen QR-Code mit einer Adresse auf ein MP4-Video aufzurufen und dieses Video zu streamen. Innerhalb eines abgespielten Videos ist es möglich, 10 Sekunden vor oder zurück zu spulen und zu pausieren und zu starten. Zudem ist es möglich, Kapitelmarken zu setzen und in einer eigenen Ansicht zu bearbeiten.
+Die andere Hauptfunktionalität betrifft Videos. Es ist möglich,  Videos aufzuzeichnen und dieses abzuspielen. Es ist ebenso möglich, einen QR-Code mit einer Adresse auf ein MP4-Video aufzurufen und dieses Video zu streamen. Innerhalb eines abgespielten Videos ist es möglich, 10 Sekunden vor oder zurück zu spulen und zu pausieren. Zudem ist es möglich, Kapitelmarken zu setzen und in einer eigenen Ansicht zu bearbeiten.
 
 All diese Funktionalitäten können via Sprachsteuerung ausgewählt werden. Dazu müssen die Beschriftungen der Buttons laut vorgelesen werden. Die Brille interpretiert dann diese Eingaben als \emph{Click}-Events und ruft entsprechende Funktionen auf.
 
@@ -64,7 +65,7 @@ Das Programm folgt bei der Videofunktionalität dem Model-View-Controller (\emph
 %
 %
 \subsection{User-Interface (View)}
-Die Android-Anwendung wurde nach dem in Abbildung \ref{fig:Storyboard_des_Prototypen} gezeigten Storyboard erstellt. Die Anwendung beginnt in einem Hauptmenü, welches ermöglicht, per Sprachbefehl einen von zwei Buttons auszuwählen. Mit dem ersten Button wird der Nutzer zur Slideshow-Seite weitergeleitet. Beim zweiten Button wird auf die Videoanzeige und beim dritten Button auf die Video-Aufzeichnen Funktion weitergeleitet. Mittels eines \enquote{Schritt zurückbefehls} der Smartglass wird der androidtypische \enquote{Zurückbefehl} betätigt.
+Die Android-Anwendung wurde nach dem in Abbildung \ref{fig:Storyboard_des_Prototypen} gezeigten Storyboard erstellt. Die Anwendung beginnt in einem Hauptmenü, welches ermöglicht, per Sprachbefehl einen von zwei Buttons auszuwählen. Mit dem ersten Button wird der Nutzer zur Slideshow-Seite weitergeleitet. Beim zweiten Button wird auf die Videoanzeige und beim dritten Button auf die Video-Aufzeichnen Funktion weitergeleitet. Mittels eines \enquote{Schritt-Zurück-Befehls} der Smartglass wird der androidtypische \enquote{Zurückbefehl} betätigt.
 
 \begin{figure}[htbp]
     \centering
