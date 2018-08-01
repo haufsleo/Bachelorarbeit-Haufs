@@ -42,7 +42,7 @@ Für die Implementierung des Prototypen wurde \emph{Android Studio} mit Android 
 
 Die API der Smartglass hat zudem eine Funktionalität, um Barcodes und QR-Codes auszulesen und den Inhalt zurückzugeben und eine API, um Videos in hoher Auflösung aufzuzeichnen. 
 
-Der Prototyp speichert aufgezeichnete Videos auf dem Gerät und serialisiert das dazugehörige Datenobjekt (vgl. Kapitel \ref{sec:Datenmodell}) auf dem Gerätespeicher. Externe Videos und Bilder werden per JSON-Objekt, welches über einen Link von einem Server geladen wird, geladen. Dieses JSON-Objekt enthält alle notwendigen Informationen. So enthält das JSON-Objekt der Slideshow ein Array aus Objekten mit Namen und Url. Beim Video wird der Name, die Url und die Kapitel mit Namen und Position in Millisekunden gespeichert (vgl. Listing \ref{lst:json_video} und \ref{lst:json_slides}).
+Der Prototyp speichert aufgezeichnete Videos auf dem Gerät und serialisiert das dazugehörige Datenobjekt (vgl. Kapitel \ref{sec:Datenmodell}) auf dem Gerätespeicher. Externe Videos und Bilder werden per JSON-Objekt, welches über einen Link von einem Server geladen wird, geladen. Diese JSON-Objekte enthalten alle notwendigen Informationen. So enthält das JSON-Objekt der Slideshow ein Array aus Objekten mit Namen und URL. Beim Video wird der Name, die URL und die Kapitel mit Namen und Position in Millisekunden gespeichert (vgl. Listing \ref{lst:json_video} und \ref{lst:json_slides}).
 
 Der verwendete lokale Server ist ein NodeJs-Server, welcher über die IP-Adresse und den verwendeten Port einen Ordner auf dem Dateisystem freigibt.
 %
@@ -98,9 +98,9 @@ Wird ein Button \enquote{Kapitel} aufgerufen, so wird eine eigene View zur Verwa
 \label{sec:Datenmodell}
 In Abbildung \ref{fig:Klassendiagramm} ist neben der Klassenstruktur des Controllers das Klassendiagramm des Models gezeigt. Dieses besteht aus insgesamt vier Klassen: den Basisdatentypen \enquote{Slide}, \enquote{Video} sowie \enquote{VideoChapter} und der Liste von Slides \enquote{SlideList}. 
 
-Die Klasse \enquote{Slide} kapselt einen String \enquote{fileUrl} und den Titel \enquote{title}. 
+Die Klasse \enquote{Slide} kapselt einen String \enquote{fileURL} und den Titel \enquote{title}. 
 Die Klasse \enquote{VideoChapter} dient zur Speicherung eines Kapitels eines Videos und wird von der Klasse Video verwendet. Ein VideoChapter besteht aus einer Ganzzahl \enquote{position} und dem Namen des Kapitels als String. Die Klasse \enquote{SlideList} kapselt eine \emph{ArrayList} von Slides sowie den Namen der SlideList.
-Die Klasse \enquote{Video} besteht aus dem Namen der Datei, in welcher das Video im Dateisystem gespeichert wird, der Url des Videos, dem Titel, sowie aus einer ArrayList von VideoChapter. Video besitzt zudem öffentliche Methoden zum Hinzufügen und Entfernen von Kapiteln sowie zum Persistieren und laden des Video-Models im Dateisystem.
+Die Klasse \enquote{Video} besteht aus dem Namen der Datei, in welcher das Video im Dateisystem gespeichert wird, der URL des Videos, dem Titel, sowie aus einer ArrayList von VideoChapter. Video besitzt zudem öffentliche Methoden zum Hinzufügen und Entfernen von Kapiteln sowie zum Persistieren und laden des Video-Models im Dateisystem.
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=1\textwidth]{data/bilder/Klassendiagramm.pdf}
@@ -119,7 +119,7 @@ Die Slides sowie das Video können per Link auf ein JSON-Codiertes Model eingele
 \subsection{Programmlogik (Controller)}
 Die Programmlogik der Videofunktionalität wird durch einen Controller (vgl. Abbildung \ref{fig:Klassendiagramm}) durchgeführt. Dieser kapselt das Model, also ein Objekt der Klasse Video namens \enquote{selectedVideo}. Mittels verschiedener öffentlicher Methoden kann die Programmlogik realisiert werden. 
 
-\texttt{getVideoUriFromSelectedVideo()} liefert zum gekapselten Model eine Java-Uri, die anschließend in der View eingebunden werden kann.
+\texttt{getVideoURIFromSelectedVideo()} liefert zum gekapselten Model eine Java-URI, die anschließend in der View eingebunden werden kann.
 
 \texttt{getPreviousChapterTime(int)} und \texttt{getNextChapterTime(int)} liefern das nächste Kapitel sowie das vorherige Kapitel abhängig von einer aktuellen Zeit. 
 
@@ -166,7 +166,7 @@ Videos können ebenfalls per HTTP-Request geladen werden und aus einem JSON-Obje
 \label{sec:Lokaler_Server}
 Als lokaler Server wird ein NodeJs-Server verwendet. Dieser liefert Zugriff auf alle in einem Ordner \enquote{Public} liegenden Dateien. So lassen sich URLs erstellen und per QR-Code von der Smartglass aus laden, die direkte Links zu Dateien enthalten.
 
-Die Bilder werden zur Anzeige heruntergeladen, die Videos werden gestreamt. Zum Streamen wird die URL des Videos in eine \emph{URI} überführt und dem Android-Videoplayer übergeben.
+Die Bilder werden zur Anzeige heruntergeladen, die Videos werden gestreamt. Zum Streamen wird die URL des Videos in eine \emph{URI} überführt und dem Android-Videoplayer übergeben. Mithilfe des Videoplayer-Steuerelementes der Android-Api werden die Videoinhalte gestreamt.
 
 Aufgerufen wird der Server über zwei QR-Codes. Der erste Code initialisiert den Server auf dem Client. Die Server-Basis-URL wird zunächst beim Appstart durch einen QR-Code geladen. Dieser enthält die IP-Adresse des Servers sowie den Port, über den die Serveranwendung angesprochen wird. In den QR-Codes von Slidelists sowie Videos werden lediglich die Unterpfade gekapselt, welche zur entsprechenden Datei führen. Innerhalb der Smartglass-Anwendung werden Pfad zum Server und zum Unterpfad zusammengesetzt.
 
