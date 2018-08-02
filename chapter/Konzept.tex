@@ -46,7 +46,6 @@ Objekterkennung hat dank Neuronaler Netze eine enorme Qualitätssteigerung erfah
 Auf Android ist für Objekterkennung momentan eine Internetverbindung nötig, da nicht \emph{on Device}, sondern \emph{cloudbasiert} gearbeitet wird. Dies ist deutlich ineffizienter in der Verarbeitungszeit als \emph{on device}-Objekterkennung und erfordert eine Internetverbindung. Dafür ist die Qualität der Analyse besser, da eine höhere Rechenleistung und größere Datenbanken der Neuronalen Netze Verwendung findet.
 
 Mittels Objekterkennung in Smartglasses eröffnen sich völlig neue Möglichkeiten der Interaktion für Nutzer. So könnten in der Sterilgutversorgung spezifische chirurgische Instrumente oder ganze Siebe mit Instrumenten erkannt werden. Es wäre möglich, direkte Handlungsanweisungen für Mitarbeiter der Medizinprodukteaufbereitung im Blickfeld anzuzeigen oder Austauschmöglichkeiten mit Mitarbeitern über konkret erkannte Instrumente zu führen. Es wäre per Objekterkennung ebenfalls möglich, die Dokumentation von Arbeitsschritten mittels erkannter Objekte zu führen, ohne einen Bar- oder QR-Code einzulesen.
-%\insertMore{Objekterkennung}
 %
 %
 %
@@ -77,7 +76,6 @@ Abschließend sei der Einsatz von Barcodes genannt, die die Position für Virtue
 %
 \subsection{Medienverwaltung}
 \label{sec:Medienverwaltung}
-% 2 Seiten (???)
 Werden Videos oder Bilder auf einer Smartglass erzeugt, können diese entweder (lokal) auf der Brille bzw. deren SD-Karte oder (extern) auf einem Server (\emph{Clouddienst, Server}) gespeichert werden. Werden die Bilder lokal gespeichert, so benötigt die betreffende Anwendung eine entsprechende Datenbankverwaltung der Bilder bzw. Videos. Bilder können im Normalfall in der Originalgröße der Kamera gespeichert werden, Videos müssen dagegen evtl. komprimiert werden, da sie sonst zu groß sind, um auf einen Server geladen zu werden. 
 
 Steuerung der Eingaben lassen sich auf unterschiedliche Weise regeln. So ist es möglich, Links zu Videos oder Bildern in einer Datenbank zu speichern und per Barcode oder QR-Code darauf zuzugreifen, also den Identifikationsschlüssel des entsprechenden Videos in der Datenbank zu verlinken. Der Link könnte auch zu einem extern gespeicherten Medium in einem QR-Code gespeichert und direkt verlinkt werden. Diese Datenbank kann im Gerät oder auf einem externen Server gespeichert sein. 
@@ -98,9 +96,8 @@ Videos und Bilder können entweder gestreamt werden oder im Dateisystem gespeich
 %
 \section{Medienpräsentation}
 \label{sec:Medienpraesentation}
-% 2 Seiten
 Die Art und Weise, wie Daten auf einem in der Smartglass vergleichsweise kleinen Bildschirm dargestellt werden, ist eine große Herausforderung für die Entwicklung von Smartglass-Apps. Mobile Geräte, wie auch Smartglasses, bieten nur wenig Platz, um Informationen zu präsentieren. Medien müssen übersichtlich und gleichzeitig präsent angeordnet werden. Beschriftungen, die die Sprachbefehle erklären, müssen übersichtlich, aber auch nicht zu präsent angeordnet werden. Die Smartglassanwendung muss, wie jede gute Smartphone App auch, selbsterklärend zu benutzen sein, damit die in Kapitel \ref{sec:Spezifische_Anforderungen_an_Smartglasses} beschriebene gute Nutzererfahrung gewährleistet ist. 
-Muss selbst ein technikaffiner Nutzer erst in einem längeren Seminar o.Ä. die Nutzung der App \emph{lernen}, so ist das Design der App ungenügend \cite{Hoober2011} \cite[S.~141ff]{Norman2013}.
+Muss selbst ein technikaffiner Nutzer erst in einem längeren Seminar o.Ä. die Nutzung der App lernen, so ist das Design der App ungenügend \cite{Hoober2011} \cite[S.~141ff]{Norman2013}.
 
 Designer von Oberflächen haben nicht die Möglichkeit über großen Platz für Bilder, Listen etc. zu verfügen. Das Design muss dabei auf das Wesentliche reduziert werden. Die erste View der App sollte dabei die grundlegenden Informationen enthalten \cite[S.~442]{Tidwell2005}, um die App zu verstehen. So sollte zur Benutzung der App eine kurze Anleitung angezeigt werden, da Android-Smartglasses nicht selbsterklärend bedienbar sind.
 
@@ -119,7 +116,6 @@ Klassische Scrolllisten (\emph{Scrollviews}), wie sie bei Smartphones und oftmal
 %
 \section{Medienerfassung/-erstellung}
 \label{sec:Medienerfassung_-erstellung}
-% 2 Seiten
 Medien in einer Smartglass können auf unterschiedlichste Weise erfasst werden. Zum einen können Videos und Bilder aufgenommen werden. Sprachaufnahmen sind ebenfalls möglich, genau wie in Text transkribierte Sprache.
 
 Medien, die auf einer Smartglass erzeugt werden, müssen ggf. komprimiert werden oder anders weiterverarbeitet werden, bevor sie verwendet werden können. So müssen Video- und Audioaufnahmen ggf. digital aufbereitet werden, da in der Sterilgutversorgung eine sehr starke Geräuschkulisse herrscht. Monotone Hintergrundgeräusche lassen sich heute sehr gut herausfiltern. Hier ist es natürlich hilfreich, wenn das Mikrofon der Smartglass von sich aus schon über eine Geräuschunterdrückung (\emph{Noise Cancellation}) verfügt.
